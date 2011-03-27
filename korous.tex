@@ -1,0 +1,55 @@
+
+% *****************************
+% *   YOUR TEXT STARTS HERE   *
+% *****************************
+
+\title{Combined Adaptive Multimesh $hp$-FEM/$hp$-DG for Multiphysics 
+Coupled Problems Involving Compressible Inviscid Flows}
+\author{} \institute{} % Intentionally left blank
+\tocauthor{Lukas Korous, \underline{Milan Hanus}}
+\maketitle
+\begin{center}
+{\large Lukas Korous}\\
+Univerzita Karlova v Praze\\
+{\tt lukas.korous@gmail.com}\\
+\vspace{4mm} % Use this space when including 3rd author
+{\large \underline{Milan Hanus}}\\
+Zapadoceska Univerzita v Plzni\\
+{\tt mhanus@kma.zcu.cz}
+\end{center}
+
+\section*{Abstract}
+
+During the last decade, Discontinuous Galerkin (DG) methods have
+been studied by numerous researchers in the context of different
+problems ranging from linear elliptic equations to Euler equations
+of compressible inviscid flow, the latter e.g. in~\cite{1}. It is well known that DG methods
+yield larger discrete problems than standard continuous finite
+element methods (FEM). On the other hand, their implicit stabilization
+through embedded numerical fluxes makes them particularly well
+suited for hyperbolic flow problems. Thus for multiphysics problems
+involving compressible flow we propose to combine the best
+of both worlds: DG is used for the flow part only while standard
+FEM is employed for second-order equations where it works very well.
+The DG/FEM combination is carried out for arbitrary-degree elements
+in a monolithic fashion, using a novel multimesh hp-FEM technology
+deployed by Dr. Solin and his collaborators~\cite{2},~\cite{3}.
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{1}
+{\sc V. Dolejsi, M. Feistauer, C. Schwab}. {On Some Aspects of the Discontinuous Galerkin Finite Element Method for Conservation Laws}. Math. Comput. Simul. 61 (2003), pp.~333--346.
+
+\bibitem{2}
+{\sc L. Dubcova, P. Solin, J. Cerveny, P. Kus}. {Space and Time Adaptive Two-Mesh $hp$-FEM for Transient Microwave Heating Problems}. Electromagnetics, Vol. 30, Issue 1 (2010), pp.~23--40.
+
+\bibitem{3}
+{\sc P. Solin, J. Cerveny, L. Dubcova, D. Andrs}. {Monolithic Discretization of Linear Thermoelasticity Problems via Adaptive Multimesh $hp$-FEM}. J. Comput. Appl. Math 234 (2010), pp.~2350--2357.
+
+\end{thebibliography}
+
+% ***************************
+% *   YOUR TEXT ENDS HERE   *
+% ***************************

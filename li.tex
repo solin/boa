@@ -1,0 +1,72 @@
+
+
+% *****************************
+% *   YOUR TEXT STARTS HERE   *
+% *****************************
+
+\title{A Fast Mesh-Alignment Algorithm for 2D Curvilinear Grid}
+\author{} \institute{} % Intentionally left blank
+\tocauthor{Shengtai Li, \underline{Second Author}}
+\maketitle
+\begin{center}
+{\large\underline{Shengtai Li}}\\
+Theoretical Division, Los Alamos National Laboratory, NM 87545, USA\\
+{\tt sli@lanl.gov}\\
+\vspace{4mm} % Use this space when including 3rd author
+{\large Patrick Knupp} \\
+Applied Mathematics \& Applications Dept.
+Sandia National Laboratories, 
+Alberquerque, NM 87185, USA \\
+{\tt pknupp@snl.gov}\\
+\vspace{4mm} % Use this space when including 3rd author
+{\large J. Mac Hyman} \\
+Theoretical Division, Los Alamos National Laboratory, NM 87545, USA \\
+{\tt hyman@lanl.gov}\\
+\vspace{4mm} % Use this space when including 3rd author
+{\large Mikhail Shashkov} \\
+Computational Physics Division, Los Alamos National Laboratory, NM
+87545, USA \\ 
+{\tt shashkov@lanl.gov}
+\end{center}
+
+\section*{Abstract}
+
+When numerically approximating physical systems with discontinuous 
+coefficients, often the largest numerical errors are introduced in a 
+neighborhood of the discontinuities. These errors are often greatly 
+reduced if the grid is aligned with the discontinuities. 
+In predicting the extent of contamination and
+environment danger posed by subsurface flows from hazardous waste
+sites, the rate and direction of underground flows is governed by
+discontinuities in the geomorphology of the flow field.  Numerical
+approximations are more accurate when the underlying grid is  aligned
+with the discontinuities to minimize the heterogeneity  within a grid cell.
+
+We will present a new numerical algorithm that aligns a curvilinear
+grid with internal alignment curves (IACs).  These IACs can be used to
+delineate internal interfaces, discontinuities in material properties,
+internal boundaries, or major features of a flow field. Our grid
+generation algorithm readjusts a predefined reference grid to create a
+nearby grid where the mesh cell edges are aligned with the IACs.  On
+an aligned grid, numerical discretizations of partial differential
+equations can be formulated to satisfy the interfacial relations, such
+as matching fluxes across the discontinuity, to  reduce the numerical
+errors introduced by the discontinuity.  We present  examples to
+demonstrate the effectiveness of the grid-alignment algorithm for
+multiple imbedded interfaces.   
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{CockburnGopalakrishnan04}
+{\sc J.M.~Hyman, P.~Knupp, S.~Li, and M.~Shashkov}. {An algorithm to align a
+quadrilateral grid with internal boundary}. J. Comput. Phys. 136
+(2000),  133
+
+
+\end{thebibliography}
+
+% ***************************
+% *   YOUR TEXT ENDS HERE   *
+% ***************************

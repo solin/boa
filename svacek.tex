@@ -1,0 +1,97 @@
+
+
+% *****************************
+% *   YOUR TEXT STARTS HERE   *
+% *****************************
+
+\title{On Finite Element Application for Solution of Aeroelastic Instability of Airfoil with Consideration of Nonlinear Effects}
+\author{} \institute{} % Intentionally left blank
+\tocauthor{P. Sv\' a\v cek}%, \underline{J. Hor\' a\v cek}}
+\maketitle
+\begin{center}
+{\large P. Sv\' a\v cek}\\
+{$^\ast$ Czech Technical University, Faculty of Mechanichal Engineering,
+Dep. Technical Mathematics}
+Karlovo nam. 13, Praha 2, 121 35,\\{\tt Petr.Svacek@fs.cvut.cz}\\
+%\vspace{4mm} % Use this space when including 3rd author
+%{\large \underline{J. Hor\' a\v cek}}\\
+%Institute of Thermomechanics, Academy of Sciences of the Czech Republic,
+%Dolej\v skova 5, Praha 8, Czech Republic\\
+%{\tt jaromirh@it.cas.cz}
+\end{center}
+
+\section*{Abstract}
+This paper focuses on numerical approximation of a nonlinear problem
+of interactions of vicous incompressible flow over a flexibly supported airfoil with aileron.
+The time-dependent computational domain is taken into account by the Arbitrary Lagrangian-Eulerian method,
+cf.~\cite{Sva1}. The flow is governed by the incompressible Navier-Stokes equations written in the ALE form 
+\begin{equation}
+\label{eq:NS}
+\frac{D^{\mathcal A} {\mathbf v} }{D t} \,  
+- \nu \triangle {\mathbf v} + (({\mathbf v}-{\mathbf w}_D)\cdot\nabla) {\mathbf v}
++ \nabla p = 0,  \qquad\qquad
+\mbox{div}\, {\mathbf v} = 0, 
+\qquad \mbox{ in } \Omega_t,
+\end{equation}
+where $\mathbf v$ is flow velocity, $p$ is the kinematic pressure and $\nu$ the kinematic viscosity.
+The computational domain $\Omega_t$ surrounds a flexibly supported airfoil with aileron section. 
+The motion of the airfoil and aileron structure is described by the system of  ordinary differential equations
+for vertical displacement $h$, angle of rotation $\alpha$ and angle of rotation of the aileron $\beta$
+
+\begin{equation}
+  \label{eq:ODE3}
+ \left(
+ \begin{array}{ccc}
+   m         &     S_\alpha                           &    S_\beta                    \\
+   S_\alpha  &     I_\alpha                           &    \widetilde{\Delta} S_\beta  + I_\beta \\
+   S_\beta   &  \widetilde{\Delta} S_\beta  + I_\beta       &    I_\beta                    \\
+ \end{array}
+ \right)
+ \left( \begin{array}{c} \ddot{h} \\ \ddot{\alpha} \\ \ddot{\beta} \end{array} \right)
++ {\mathbb K}
+ \left( \begin{array}{c} h \\ \alpha \\ \beta\end{array} \right)
+ = 
+ \left( \begin{array}{c} -L  \\ M \\ M_\beta\end{array} \right),
+\end{equation}
+where ${\mathbb K}=\mbox{diag}( k_{h},k_{\alpha},k_{\beta})$, $m$, $S_\alpha$, $I_\alpha$, $S_\beta$,
+$I_\beta$ are the structural parameters. Further, $L$, $M$, $M_\beta$ are the aerodynamical forces.
+In order to describe correctly the behaviour also for large displacements, the geometrical nonlinearities 
+are included in the model. Further, the effect of nonlinear stiffness is investigated.
+
+The numerical approximation of the presented mathematical model consists of approximations of the stucture model,
+the fluid model and the interface conditions. The structure model is integrated in time by Runge-Kutte 4th order method and coupled with 
+the fluid model with the aid of strong coupling algorithm. The realization of the strongly coupled algorithm
+is realized by repeated solutions of both structural and flow models. 
+For the approximation of Navier-Stokes equations the stabilized finite element method is used, cf.~\cite{Sva1}.
+The described method is applied on solution of several problems.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+%\bibitem{CockburnGopalakrishnan04}
+%{\sc B.~Cockburn and J.~Gopalakrishnan}. {A characterization of hybridized
+%  mixed methods for second order elliptic problems}. SIAM J. Numer. Anal. 42
+%  (2004), pp.~283--301.
+
+
+\bibitem{Sva1}
+{\sc P.~Sv\'{a}\v{c}ek, M.~Feistauer, J.~Hor\'{a}\v{c}ek}.
+\newblock Numerical Simulation of Flow Induced Airfoil Vibrations with Large Amplitudes.
+\newblock {Journal of Fluids and Structure} {23}(3) (2007), pp. 391--411.
+
+\bibitem{Sva2}
+{\sc P.~Sv\'{a}\v{c}ek}. 
+On Energy Conservation for Finite Element Approximation of Flow - Induced Airfoil Vibrations.
+\newblock Mathematics and Computers in Simulation 80(8) 2010, pp. 1713-1724.
+
+
+\bibitem{Ricci}
+{\sc S.~Ricci, A.~Scotti, J.~Cecrdle, J.~Malecek}.
+Active control of three-surface aeroelastic model.
+\newblock Journal of Aircraft 45(3) 2008, 1002-1013.
+
+\end{thebibliography}
+
+% ***************************
+% *   YOUR TEXT ENDS HERE   *
+% ***************************

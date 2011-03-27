@@ -1,0 +1,66 @@
+
+% *****************************
+% *   YOUR TEXT STARTS HERE   *
+% *****************************
+
+\title{Multiscale Modeling of Complex Structures}
+\author{} \institute{} % Intentionally left blank
+\tocauthor{C. Bajaj, A. DiCarlo, A. Paoluzzi, G.Scorzelli}
+
+\maketitle
+
+\begin{center}
+{\large Chandrajit Bajaj}\\
+Department of Computer Science \& ICES, University of Texas at Austin\\
+{\tt bajaj@ices.utexas.edu}\\
+
+\vspace{4mm} % Use this space when including 3rd author
+{\large Antonio DiCarlo}\\
+Department of Studies on Structures, ``Roma Tre'' University\\
+{\tt adicarlo@mac.com}
+
+\vspace{4mm} % Use this space when including 3rd author
+{\large Alberto Paoluzzi and  Giorgio Scorzelli}\\
+Department of Computer Science and Automation, ``Roma Tre'' University\\
+{\tt \{paoluzzi,scorzelli\}@dia.uniroma3.it}
+
+\end{center}
+
+\section*{Abstract}
+
+A complex evolving structure is one that contains important features at multiple spatial and/or temporal scales. In this paper we introduce a novel approach to multiscale geometric modeling of complex structures, both natural (in particular biological) and artificial. We distinguish between multiresolution, that adds more detail to the current set of structures, and multiscale, that populates the current scene with new interior structures. The key passage from a scale to another is the boundary computation, and often (although not necessarily) the "solidification" of the boundary and/or the search for coboundary of boundary cells.  We discuss multiscale and multiresolution of complex structures by using multidimensional decompositions with convex cells and the topological operators of boundary and coboundary. Working with chains and cochains~\cite{DicarloMPS09} allows us to represent the relevant fields at the proper scales, by using information or models from different levels. Examples are given of man-made and biological architectures, that use scaffolding and membranes to define the emerging substructures, populated by interesting inhabitants and exhibiting nontrivial patterns at various scales. The change of scale requires the integration of different indexing methods, including octrees, progressive BSP trees~\cite{ScorzelliPP-PSM2008} and Dynamic Packing Grids (DPG), a neighborhood data structure for maintaining and manipulating flexible molecules and assemblies~\cite{Bajaj:2009:DDS:1629255.1629287}. The approach is demonstrated by a Python software package allowing for symbolic multiscale modeling of structured assemblies, that is a first step towards a computational environment to produce libraries of executable, combinable and customizable computer models of natural and synthetic biosystems~\cite{BajajDP-PPP2008}.
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{Bajaj:2009:DDS:1629255.1629287}
+{\sc Bajaj, C., Chowdhury, R.~A., and Rasheed, M.}
+\newblock A dynamic data structure for flexible molecular maintenance and
+  informatics.
+\newblock In {\em 2009 SIAM/ACM Joint Conference on Geometric and Physical
+  Modeling\/} (New York, NY, {USA}, 2009), SPM '09, Acm, pp.~259--270.
+
+\bibitem{BajajDP-PPP2008}
+{\sc Bajaj, C., DiCarlo, A., and Paoluzzi, A.}
+\newblock Proto-plasm: A parallel language for scalable modeling of biosystems.
+\newblock {\em Philosophical Transactions of the Royal Society A 366}, 1878
+  (2008), 3045--3065.
+
+\bibitem{DicarloMPS09}
+{\sc DiCarlo, A., Milicchio, F., Paoluzzi, A., and Shapiro, V.}
+\newblock Chain-based representations for solid and physical modeling.
+\newblock {\em {IEEE} Transactions on Applied Science and Engineering 6}, 3
+  (July 2009), 454--467.
+
+\bibitem{ScorzelliPP-PSM2008}
+{\sc Scorzelli, G., Paoluzzi, A., and Pascucci, V.}
+\newblock Parallel solid modeling using bsp dataflow.
+\newblock {\em International Journal of Computational Geometry and Applications
+  18}, 5 (October 2008), 441--467.
+
+\end{thebibliography}
+
+% ***************************
+% *   YOUR TEXT ENDS HERE   *
+% ***************************

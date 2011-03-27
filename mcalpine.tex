@@ -1,0 +1,67 @@
+
+
+% *****************************
+% *   YOUR TEXT STARTS HERE   *
+% *****************************
+
+\title{Simulation and parameterization of atmospheric surface flow with computational fluid dynamics}
+\author{} % Intentionally left blank
+\institute{}
+
+\tocauthor{}
+\maketitle
+\begin{center}
+{\large \underline{J.D. McAlpine}}\\
+Desert Research Institute, 2215 Raggio Pkwy, Reno, NV 89512\\
+{\tt jdmac@dri.edu}\\
+
+{\large Darko Koracin}\\
+Desert Research Institute, 2215 Raggio Pkwy, Reno, NV 89512\\
+{\tt darko.koracin@dri.edu}
+\end{center}
+
+\section*{Abstract}
+
+ The most common everyday exposure to an application of numerical modeling is the daily weather forecast. Indeed,
+ some of the first computational modeling attempts in history were targeted towards weather prediction. The science
+ and technique of atmospheric modeling has progressed substantially to the point that large scale features can be 
+ accurately modeled out to the limits of predictability. Much of today\textquoteright s research therefore focuses on modeling of 
+ higher frequency and smaller scale atmospheric phenomena. 
+
+ At the extreme end of the scale is microscale modeling of the flow around the individual surface roughness elements 
+in the atmospheric surface layer. This field requires direct simulation of eddies in the wake of the elements as well 
+as thermally-driven large eddies because they greatly dominate the flow at this scale. Simulation of flow around objects
+ can be attained using computational fluid dynamics (CFD), where the equations of motion are solved over a grid of discrete 
+fluid volumes, meshed around the individual roughness elements.
+
+ The difficulty in accounting for turbulent behavior requires some degree of turbulence parameterization even at this 
+small scale. A number of methods have been developed to simulate the flow in a steady-state or unsteady fashion using 
+various turbulence closure methods, such as k-e closure and Large Eddy Simulation. Sets of guidelines have been developed 
+based on the work of various authors and engineering groups and recently reviewed in McAlpine and Ruby (2008). 
+
+In this work we present some of the methods that have been used to simulate the atmospheric surface layer with CFD in 
+both neutral and unstable atmospheric conditions. Included is a review of the strengths and weaknesses of various ad-hoc 
+and numerical procedures and guidelines established in attempts to achieve more accurate results. We also present various 
+applications of this modeling which include environmental assessment, health and safety review, and assessment of aircraft 
+operation near the surface. Recent work by the group involves CFD simulation of surface rotor wakes and dust entrainment
+(McAlpine, 2009). 
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{mcalandruby}
+{\sc J.~McAlpine and M.~Ruby}. {Computational fluid dynamics of microscale meteorological flow for air quality applications}. Ch. 5C of Air
+  Quality Modeling (P. Zannetti, Ed.), Envirocomp Inst., (2008).
+
+\bibitem{mcalthesis}
+{\sc J.~McAlpine}. {Lagrangian stochastic dispersion modeling in the atmospheric surface layer with an embedded strong flow perturbation}. Master's Thesis,
+ University of Nevada, Reno, (2009).
+
+
+
+\end{thebibliography}
+
+% ***************************
+% *   YOUR TEXT ENDS HERE   *
+% ***************************

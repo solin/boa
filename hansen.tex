@@ -1,0 +1,66 @@
+
+
+% *****************************
+% *   YOUR TEXT STARTS HERE   *
+% *****************************
+
+\title{Development of a Reactor System Analysis Code using TRILINOS}
+\author{} \institute{} % Intentionally left blank
+\tocauthor{Glen Hansen, \underline{Second Author}}
+\maketitle
+\begin{center}
+{\large \underline{Glen Hansen}}\\
+Idaho National Laboratory\\
+{\tt Glen.Hansen@inl.gov}\\
+\vspace{4mm} % Use this space when including 3rd author
+{\large Vincent Mousseau}\\
+Idaho National Laboratory\\
+{\tt Vincent.Mousseau@inl.gov}
+\end{center}
+
+\section*{Abstract}
+
+This presentation gives an overview of the development of RELAP6, a reactor
+thermal-hydraulics code that is based on the TRILINOS multiphysics framework
+from Sandia National Laboratories (\url{http://trilinos.sandia.gov}). The
+software constructs a dynamic rendition of the reactor facility geometry using
+models from component libraries and input files. The components interconnect to
+form a simple graph, where each component supports the required degrees of
+freedom (DOF) needed to support the spatial resolution needed for the analysis
+of the component's thermal-hydraulic behavior. The component DOF are assembled
+together with an ordering determined by the connectivity of the graph to form a
+vector of nonlinear algebraic equations.  The component graph can construct an
+initial condition vector given the initial state of the components, or can
+create a residual vector that is valid for any time state of the system. These initial
+conditions and system residual is used by TRILINOS' NOX nonlinear solver, various linear solvers
+and preconditioner packages, to obtain the state of the system each time step. Typically, this
+provides an implicit Jacobian-free Newton Krylov solution method that provides for stable, parallel
+system simulation given the user's choice of time step.
+
+The software system leverages the CMAKE build system within TRILINOS and the CTEST 
+testing system for regression testing. Details of the software architecture, capabilities, and
+design strategy will be discussed in detail.
+
+\bibliographystyle{plain}
+%\bibliography{mrabbrev,localabbrev,external,mmg_journals,reports}
+\begin{thebibliography}{1}
+
+\bibitem{gaston09a}
+D.~Gaston, G.~Hansen, S.~Kadioglu, D.~Knoll, C.~Newman, H.~Park, C.~Permann,
+  and W.~Taitano.
+\newblock Parallel multiphysics algorithms and software for computational
+  nuclear engineering.
+\newblock {\em Journal of Physics: Conference Series}, 180(1):012012, 2009.
+
+\bibitem{pope:09}
+M.~A. Pope and V.~A. Mousseau.
+\newblock Accuracy and efficiency of a coupled neutronics and thermal
+  hydraulics model.
+\newblock {\em Nuclear Engineering and Technology}, 41(7):885--892, 2009.
+
+\end{thebibliography}
+
+
+% ***************************
+% *   YOUR TEXT ENDS HERE   *
+% ***************************
