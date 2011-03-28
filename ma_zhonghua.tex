@@ -1,0 +1,47 @@
+\title{Solving a Suite of NIST Benchmark Problems with Hermes}
+\author{} \institute{}
+\tocauthor{\underline{Zhonghua Ma}, Lukas Korous, Erick Santiago}
+
+\begin{center}
+
+\textbf{\Large Solving a Suite of NIST Benchmark Problems with Hermes}\\
+\vspace{10mm}
+{\large \underline{Zhonghua Ma}}\\
+China University of Petroleum, Beijing, China\\
+{\tt mazhonghua83@gmail.com}\\
+\vspace{4mm}
+{\large Lukas Korous}\\
+Charles University, Prague, Czech Republic\\
+{\tt lukas.korous@gmail.com}\\
+\vspace{4mm}
+{\large Erick Santiago}\\
+University of Nevada, Reno, USA\\
+{\tt laviticus@sbcglobal.net}
+
+\end{center}
+
+\section*{Abstract}
+
+Adaptive grid refinement is a critical component of algorithms for the numerical solution of partial differential equations (PDEs). The development of new algorithms and computer codes for the solution of PDEs usually involves the use of proof-of-concept test problems [1,2].
+
+It is common to compare different algorithms using a large test set, to evaluate the algorithm's overall quality, which lies in the ability to handle all kinds of problems, and also to determine the algorithm's strengths and weaknesses.
+
+In this paper we solve a set of benchmark problems devised by W. Mitchel at NIST [1]. The problems exhibit various types of singularities, disruptions, and oscillations.
+
+Each of the benchmark problem is introduced, together with its exact solution. Then the solution obtained with the use of the multi-platform open source C++ library for rapid development of adaptive $hp$-FEM and $hp$-DG solvers {\sc Hermes} [3] is shown, complemented with convergence graphs and comparison of the fully anisotropic $hp$-FEM to low-order FEM in terms of convergence.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{mitchell-1}
+{\sc W.~Mitchell}. {A Collection of 2D Elliptic Problems for
+Testing Adaptive Algorithms}. NISTIR 7668, 2010 (available online).
+
+\bibitem{hpfem-1}
+{\sc P.~Solin, O.~Certik, and L.~Korous}. {Three Anisotropic Benchmark Problems
+for Adaptive Finite Element Methods}. J.~Appl. Math. Comput. 2011 (available online).
+
+\bibitem{hpfem-2}
+{\sc hpfem.org}. {http://hpfem.org}. (accessed December 1, 2010).
+
+\end{thebibliography}

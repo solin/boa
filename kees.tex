@@ -1,85 +1,23 @@
-
-
-% *****************************
-% *   YOUR TEXT STARTS HERE   *
-% *****************************
-
 \title{Multiscale Numerical Modeling of Levee Breach Processes}
-\author{} \institute{} % Intentionally left blank
+\author{} \institute{}
 \tocauthor{\underline{C. E. Kees}, M. W. Farthing, I. Akkerman, and Y. Bazilevs}
-\maketitle
+
 \begin{center}
-{\large \underline{C. E. Kees}}\\
+
+\textbf{\Large Multiscale Numerical Modeling of Levee Breach Processes}\\
+\vspace{10mm}
+
+{\large \underline{C. E. Kees}, M. W. Farthing, I. Akkerman}\\
 US Army ERDC, Vicksburg, MS, USA\\
-{\tt christopher.e.kees@usace.army.mil}\\
-\vspace{4mm} % Use this space when including 3rd author
-{\large M. W. Farthing}\\
-US Army ERDC, Vicksburg, MS, USA\\
-{\tt matthew.w.farthing@usace.army.mil}\\
-\vspace{4mm} % Use this space when including 3rd author
-{\large I. Akkerman}\\
-US Army ERDC, Vicksburg, MS, USA\\
-{\tt idoakkerman@gmail.com}\\
-\vspace{4mm} % Use this space when including 3rd author
+{\tt christopher.e.kees@usace.army.mil, matthew.w.farthing@usace.army.mil, idoakkerman@gmail.com}\\
+\vspace{4mm}
 {\large Y. Bazilevs}\\
 Structural Engineering, University of Caifornia, San Diego, CA, USA\\
-{\tt jbazilevs@ucsd.edu}\\
+{\tt jbazilevs@ucsd.edu}
+
 \end{center}
 
 \section*{Abstract}
-One of the dominant failure modes of levees during flood and storm
-surge events is erosion-based breach formation due to high velocity
-flow over the back (land-side) slope.  Modeling the breaching process
-numerically is challenging due to both physical and geometric
-complexity that develops and evolves during the overtopping event. The
-surface water flows are aerated and sediment-laden mixtures in the
-supercritical and turbulent regimes. The air/water free surface may
-undergo perturbations on the same order as the depth or even
-topological change (breaking). Likewise the soil/fluid interface is
-characterized by evolving headcuts, which are essentially moving
-discontinuities in the soil surface elevation. The most widely used
-models of levee breaching are nevertheless based on depth-integrated
-models of flow, sediment transport, and bed morphology. In this work
-our objective is to explore models with less restrictive modeling
-assumptions, which have become computationally tractable due to
-advances in both numerical methods and high-performance computing
-hardware. In particular, we present formulations of fully
-three-dimensional flow, transport, and morphological evolution for
-overtopping and breaching processes and apply recently developed
-finite element and level set methods to solve the governing equations
-for relevant test problems.
 
-%% Enter your abstract here. Authors of contributed lectures: Please do not 
-%% exceed one page including references. References to related or 
-%% competitive work are mandatory. Presenting author should be underlined. 
-%% Please do not alter the internal structure of the template. Do not 
-%% introduce any new definitions or commands, they cause problems during the 
-%% compilation of the final Book of Abstract. The Book of Abstracts will be 
-%% compiled using pdflatex. If using images, please make sure thay are
-%% in PDF or PNG. Thank you!
-
-
- \bibliographystyle{plain}
- \begin{thebibliography}{10}
-
- \bibitem{CockburnGopalakrishnan04}
- {\sc B.~Cockburn and J.~Gopalakrishnan}. {A characterization of hybridized
-   mixed methods for second order elliptic problems}. SIAM J. Numer. Anal. 42
-   (2004), pp.~283--301.
-
- \bibitem{EwingWangYang03}
- {\sc R.~Ewing, J.~Wang, and Y.~Yang}. {A stabilized discontinuous finite
-   element method for elliptic problems}. Numer. Linear Alg. Appl. 10 (2003),
-   pp.~83--104.
-
- \bibitem{A104}
- {\sc Randolph~E. Bank, Jinchao Xu, Bin Zheng}.
- \newblock Superconvergent derivative recovery for {Lagrange} triangular
-   elements of degree $p$ on unstructured grids.
- \newblock SIAM J.~Numer. Anal. 45 (2007), pp. 2032--2046. 
-
- \end{thebibliography}
-
-% ***************************
-% *   YOUR TEXT ENDS HERE   *
-% ***************************
+One of the dominant failure modes of levees during flood and storm surge events is erosion-based breach formation due to high velocity flow over the back (land-side) slope.  Modeling the breaching process numerically is challenging due to both physical and geometric complexity that develops and evolves during the overtopping event. The surface water flows are aerated and sediment-laden mixtures in the supercritical and turbulent regimes. The air/water free surface may undergo perturbations on the same order as the depth or even topological change (breaking). Likewise the soil/fluid interface is characterized by evolving headcuts, which are essentially moving discontinuities in the soil surface elevation. The most widely used models of levee breaching are nevertheless based on depth-integrated
+models of flow, sediment transport, and bed morphology. In this work our objective is to explore models with less restrictive modeling assumptions, which have become computationally tractable due to advances in both numerical methods and high-performance computing hardware. In particular, we present formulations of fully three-dimensional flow, transport, and morphological evolution for overtopping and breaching processes and apply recently developed finite element and level set methods to solve the governing equations for relevant test problems.

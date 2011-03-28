@@ -1,0 +1,53 @@
+\title{An a Posteriori Error Estimator for $hp$-Adaptive Discontinuous Galerkin Methods for Elliptic Eigenvalue Problems}
+\author{} \institute{}
+\tocauthor{\underline{Stefano Giani}, Edward Hall}
+
+\begin{center}
+
+\textbf{\Large An a Posteriori Error Estimator for $hp$-Adaptive Discontinuous Galerkin Methods for Elliptic Eigenvalue Problems}\\
+\vspace{10mm}
+{\large \underline {Stefano Giani}, Edward Hall}\\
+Pope Building, University Park, Nottingham, NG7 2 RD, UK\\
+{\tt stefano.giani@nottingham.ac.uk, edward.hall@nottingham.ac.uk}
+
+\end{center}
+
+\section*{Abstract}
+
+In this talk we present a residual-based a posteriori error estimator for $hp$-adaptive discontinuous Galerkin (DG) methods for elliptic eigenvalue problems. In particular we use as a model problem the Laplace eigenvalue problem on bounded domains in $\mathbb{R}^d$, $d=2,3$, with homogeneous Dirichlet boundary conditions. The same kind of error estimator can be easily extended to more complicated elliptic eigenvalue problems.
+
+We prove the reliability and efficiency of our error estimator. The reliability ensures that,  up to a constant and to asymptotic high order terms, the error estimator gives rise to an a posteriori error bound for both eigenvalues and eigenfunctions, on the other hand, the efficiency ensures that, up to a constant and to asymptotic high order terms, the true error bounds the error estimator. Together these two results ensures that the error estimator is linearly proportional to the true error, up to higher order terms. The ratio of the constants in the upper and lower bounds is independent of both the local mesh sizes and the local polynomial degrees. 
+
+We apply our error estimator in an $hp$-adaptive refinement algorithm and illustrate its practical performance in a series of numerical examples. 
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{paola_paper}
+{\sc P.~Antonietti, A.~Buffa, and I.~Perugia.}
+{Discontinuous Galerkin approximation of the Laplace eigenproblem}.
+J. Comput. Appl. Math. 204 (2007), pp.~317--333. 
+
+\bibitem{CHHeig}
+{\sc K.A.~Cliffe, E.~Hall, and P.~Houston.}
+{Adaptive Discontinuous {G}alerkin Methods for Eigenvalue Problems arising in Incompressible Fluid Flows}. SIAM J. Sci. Comput. 31 (2010), pp.~4607--4632.
+
+\bibitem{Houstonlift}
+{\sc P.~Houston, D.~Sch\"{o}tzau, and T.~Wihler.}
+{Energy norm a-posteriori error estimation of hp-adaptive discontinuous Galerkin methods for elliptic problems}. Math. Models Methods Appl. Sci. 17 (2001), pp.~33--62.
+
+\bibitem{HoustonSuliWihler08}
+{\sc P.~Houston, E.~S\"{u}li, and T.~Wihler.}
+{A-posteriori error analysis of $hp$-version discontinous {G}alerkin finite-element methods for second-order quasi-linear elliptic {PDEs}}.
+IMA J. Numer. Anal. 28 (2008), pp.~245--273. 
+
+\bibitem{perugia}
+{\sc I.~Perugia, and D.~Sch\"{o}tzau.}
+{An $hp$-analysis for the local discontinuous Gelrkin method for diffusion problems}. J. Sci. Comput. 17 (2001), pp.~561--571.
+
+\bibitem{zhu}
+{\sc L.~Zhu, S.~Giani, P.~Houston, and D.~Schoetzau.}
+{Energy norm a-posteriori error estimation for hp-adaptive discontinuous Galerkin methods for elliptic problems in three dimensions}. M3AS 0 (2011), pp.~1-40.
+M3AS  (2009). 
+
+\end{thebibliography}

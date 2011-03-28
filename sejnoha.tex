@@ -1,0 +1,59 @@
+\title{Homogenization of Non-Stationary Transport Processes in Masonry Structures}
+\author{} \institute{}
+\tocauthor{Jan S\'{y}kora, \underline{Michal \v{S}ejnoha}, Ji\v{r}\'{i} \v{S}ejnoha}
+
+\begin{center}
+
+\textbf{\Large Homogenization of Non-Stationary Transport Processes in Masonry Structures}\\
+\vspace{10mm}
+{\large Jan S\'{y}kora, \underline{Michal \v{S}ejnoha}}\\
+CTU in Prague, Faculty of Civil Eng., Dept. of Mechanics, Th\'akurova 7, Prague, Czech Republic\\
+{\tt jan.sykora.1@fsv.cvut.cz, sejnom@fsv.cvut.cz}\\
+\vspace{4mm} % Use this space when including 3rd author
+{\large Ji\v{r}\'{i} \v{S}ejnoha}\\
+CTU in Prague, Faculty of Civil Eng., Centre of Integrated Design of Advanced Structures, Thkurova 7, Prague, Czech Republic\\
+{\tt sejnoha@fsv.cvut.cz}
+\end{center}
+
+\section*{Abstract}
+
+The presented paper is focused on multi-scale modeling of masonry structures. The proposed multi-scale algorithm of coupled heat and moisture transfer is based on homogenization technique which is an efficient tool to derive effective models at the scale of interest. For calculations we utilize nonlinear diffusion model proposed by K\"{u}nzel, see\cite{Kunzel97}, which is based on Krischer's concept. Mesostructural sub-model presented in~\cite{Sykora10} includes assumption of stationary transport. On the other hand, neglecting capacity terms may play crucial role in estimating the effective conductivity and capacity matrices, especially in calculations with longer time steps.
+
+Our goal is to investigate an influence of non-stationary coupled heat and moisture transport on macroscopic terms. We shall examine two particular approaches proposed in the literature. The first approach, presented in ~\cite{Fish02,Manchiraju07}, divides the time domain into two different scales: the coarse (natural) time on macroscopic domain and the fine time-scale utilized for adequate solution on the periodic unit cell. The second approach, originally designed in ~\cite{Larsson10}, introduces a second-order conservation quantity affecting the non-stationary response on the macrostructural domain.
+
+An example of the solution of a two-dimensional coupled heat and moisture transport (coupling is assumed both from material and scale bridging point of views) will be presented to support the theoretical derivations. The influence of parallel computing will also be examined.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{Kunzel97}
+{\sc H.M.~K\"{u}nzel and  K.~Kiessl}. {Calculation of heat and
+moisture transfer in exposed building components}. Int. J. Heat
+Mass Tran. 40 (1997),
+  pp.~159--167.
+
+\bibitem{Sykora10}
+{\sc J.~S\'{y}kora,  M.~\v{S}ejnoha, and J.~\v{S}ejnoha}.
+{Homogenization of coupled heat and moisture transport in masonry
+structures including interfaces}. Appl. Math. Comput. 0 (2010),
+  pp.~0--0.
+
+\bibitem{Fish02}
+{\sc J.~Fish, W.~Chen and G.~Nagai}. {Non-local dispersive model
+for wave propagation in heterogeneous media: multi-dimensional
+case}. Int. J. Numer. Meth. Eng. 54 (2002),
+  pp.~347--363.
+
+\bibitem{Manchiraju07}
+{\sc S.~Manchiraju, M.~Asai and S.~Ghosh}. {A dual-time scale
+finite element model for simulating cyclic deformation of
+polycrystalline alloys}. J. Strain Anal. Eng. 42 (2007),
+  pp.~183--200.
+
+\bibitem{Larsson10}
+{\sc F.~Larsson, K.~Runesson and F.~Su}. {Variationally consistent
+computational homogenization of transient heat flow}. Int. J.
+Numer. Meth. Engng. 81
+  (2010), pp.~1659--1686.
+
+\end{thebibliography}

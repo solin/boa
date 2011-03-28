@@ -1,0 +1,35 @@
+\title{Generation of Structured Mesh in 2D Domain with Singularities on Boundary by using Elliptic PDEs}
+\author{Boris Azarenok} \institute{Dorodnicyn Computing Center of Russian Academy of Sciences, Moscow}
+
+\begin{center}
+
+\textbf{\Large Generation of Structured Mesh in 2D Domain with Singularities on Boundary by using Elliptic PDEs}\\
+\vspace{10mm}
+{\large Boris Azarenok}\\
+Dorodnicyn Computing Center of Russian Academy of Sciences \\ Vavilov str. 40 , Moscow, 119333, Russia \\
+{\tt azarenok@ccas.ru}
+
+\end{center}
+
+\section*{Abstract}
+
+In structured grid generation methods a widespread way is the use of a mapping $\mathbf F$ of the parametric domain $\mathcal P$ (square or rectangle), divided into square cells, onto the underlying physical domain $\Omega$. If the mapping $\mathbf F\,{:}\,\mathcal P{\rightarrow}\Omega$ is a homeomorphism then the image of the square mesh on the domain $\mathcal P$ is an unfolded grid on the domain $\Omega$. In a variational approach, the functions $\mathbf F{=}(f_1,f_2)$ are extremals of a functional or solution of the boundary value problem for the corresponding Euler equations. For the elliptic partial differential equations (PDEs) of the second order, to be more precise for the Laplace equations, the Rad\'o theorem \cite{Rado26} asserts that the harmonic mapping of a simply connected bounded domain onto a simply connected bounded convex domain is univalent subject to a given homeomorphism between their boundaries. To satisfy the conditions of the Rad\'o theorem on nonconvex physical domains, the inverted Laplace equations are applied (cf. \cite{Winslow67,Thomp74}). Despite the inverse harmonic mapping is a homeomorphism, its discrete realization (Winslow's method) produces a folded mesh on the domain $\Omega$ with breaks (sharp interior corners) on the boundary $\partial\Omega$. To understand the reason of grid folding we construct an analytical harmonic mapping $\mathbf F$ of the backstep domain $\Omega$ onto the parametric square $\mathcal P$. The mapping $\mathbf F\,{:}\,\Omega{\rightarrow}\mathcal P$ is sought using the conformal mapping of the unit disk onto the backstep (hexagon). This conformal mapping is sequentially performed, first, using the linear fractional map of the unit disk onto the upper half-plane and, second, Schwarz-Christoffel mapping of the upper half-plane onto the hexagon. In the unit disk, it is solved the Dirichlet problem for the each component of the harmonic mapping $f_1$ and $f_2$ by the Poisson integral. The inverse harmonic mapping $\mathbf F^{-1}{:}\,\mathcal P{\rightarrow}\Omega$ is sought by inverting numerically the analytic functions $f_1,f_2$. The obtained inverse harmonic mapping $\mathbf F^{-1}$ is very precise and close to the analytical mapping. Our solution demonstrates that the internal corner point on the backstep boundary is a singularity point where the level-set of different families are stuck, i.e. the angle between level-set $\xi{=}const$ and  $\eta{=}const$ is equal to zero. This causes the grid lines to overlap. The effect of stuck level-set at a singular point on the domain boundary is observed for the mapping produced by elliptic second-order PDEs. To eliminate mesh folding near the singular point we apply an additional local mapping. To construct the quasiconformal mapping, producing the mesh, it is solved the Dirichlet problem for quasilinear elliptic PDEs \cite{Azar09,Azar10}.
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{Rado26} {\sc T.\,Rad\'o}. {Aufgabe 41}. Jahresber. Deutsche Math.-Verein. 35 (1926), p. 49.
+
+\bibitem{Winslow67} {\sc A.M.\,Winslow}. {Numerical solution of the quasi-linear Poisson equation in a nonuniform triangle mesh}. J. Comput. Phys. 2 (1967), pp. 149--172.
+
+\bibitem{Thomp74} {\sc J.F.\,Thompson, C.W.\,Mastin, F.C.\,Thames}. {Automatic numerical generation of body-fitted curvilinear coordinate system for field containing any
+number of arbitrary two-dimensional bodies}. J. Comp. Phys. 15 (1974), pp. 299--319.
+
+\bibitem{Azar09} {\sc B.N.\,Azarenok}. {Generation of structured difference grids in two-dimensional nonconvex domains using mappings}. Comput. Math. Math. Phys. 49 N. 5 (2009),
+pp. 797--809.
+
+\bibitem{Azar10} {\sc B.N.\,Azarenok}. {On 2D structured mesh generation by using mappings}. Numerical Methods for Partial Differential Equations. (2010), Published online in Wiley
+InterScience (www.interscience.wiley.com). DOI 10.1002/num.20570.
+
+\end{thebibliography}

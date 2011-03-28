@@ -1,0 +1,34 @@
+\title{Laplace-Beltrami Enhancement for Unstructured Meshes having Dendritic Elements and Boundary Node Movement}
+\author{} \institute{}
+\tocauthor{\underline{Rod W. Douglass}}
+
+\begin{center}
+
+\textbf{\Large Laplace-Beltrami Enhancement for Unstructured Meshes having Dendritic Elements and Boundary Node Movement}\\
+\vspace{10mm}
+{\large \underline{Rod W. Douglass}}\\
+XCP-1, MS T085\\
+Los Alamos National Laboratory \\
+Los Alamos, NM 87545\\
+{\tt rwd@lanl.gov}
+
+\end{center}
+
+\section*{Abstract\footnote{The title and abstract have been approved for unrestricted release as Los Alamos 
+National Laboratory report LA-UR 11-00578.}}
+
+The Laplace-Beltrami mesh enhancement algorithm \cite{Hansen05} has been implemented in two-dimensional space for meshes containing dendritic elements and with, possibly, boundary node movement. In particular, we solve
+\begin{equation*}
+\frac{1}{\sqrt{g}} \frac{\partial}{\partial u^{\alpha}}\left(\sqrt{g} g^{\alpha \beta}
+ \frac{\partial x^i}{\partial u^{\beta}} \right) = 0, \ \ i = 1,2
+ \end{equation*}
+\noindent where $x^i$ are the coordinates in physical space describing the mesh and $u^{\alpha}, \ \ \alpha=1,2$ are local coordinates.  $g^{\alpha \beta}$ are the contravariant components of the metric tensor, and $g$ is the determinant of $g_{\alpha \beta}$, the covariant components of the metric tensor so that $g^{\alpha\gamma}\ g_{\gamma \beta} = \delta^{\alpha}_{\beta}$. This implementation operates on an unstructured mesh by forming an equivalent weak statement using finite element interpolation, assembly, and solution ideas to iteratively place those nodes allowed to move.  (Structured multi-block meshes may be converted to an equivalent unstructured mesh, nodes moved with results mapped back onto the structured mesh.)  Boundary nodes, if allowed to move, are constrained to follow the boundary geometry as described as a Wilson-Fowler spline ({\it e.g.}, Section 2.1.3.1 of \cite{Hansen05}).  Implementation details concerning the metric tensor for dendritic element treatment and boundary node movement are presented since it is the metric tensor which drives nodal movement. Since the formulation is rather general, the elliptic Laplace enhancement metric and the Wilson-Crowley metric are easily included.  Results are presented which illustrate the algorithm for a variety of test problems.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{Hansen05}
+{\sc Glen A.~Hansen, Rod W.~Douglass, and A.~Zardecki}. {Mesh Enhancement: 
+Selected Elliptic Methods, Foundations, and Applications}. Imperial College Press, London (2005).
+
+\end{thebibliography}

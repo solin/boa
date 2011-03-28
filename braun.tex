@@ -1,0 +1,49 @@
+\title{Finite Element Calculations for Multi Coulomb Center Systems}
+\author{} \institute{}
+\tocauthor{\underline{Moritz Braun}}
+
+\begin{center}
+
+\textbf{\Large Finite Element Calculations for Multi Coulomb Center Systems}\\
+\vspace{10mm}
+{\large \underline{ Moritz Braun}}\\
+Physics Department, University of South Africa, Pretoria, South Africa\\
+{\tt moritz.braun@gmail.com}
+
+\end{center}
+
+\section*{Abstract}
+
+The presence of multiple Coulomb centers in molecules poses a challenge for the solution of effective Schr\"odinger equations needed as crucial ingredient, when applying the density functional or Hartree-Fock methods to these system. This is due to two factors:
+\begin{enumerate}
+\item Kato's cusp condition\cite{Kato} 
+$
+\lim_{r_i\to 0}
+\overline
+{\frac{d\Psi/dr_i}{\Psi(r_i)}}=-Z_i\,,
+$
+needs to be satsified close to each nucleus. 
+\item Matrix elements of the coulomb potential due to each nucleus are rather  difficult to evaluate.
+\end{enumerate}
+A standard method in calculations for molecules has been the expansion in a Gaussian basis set. This is computationally convenient since all  matrix elements can be evaluated analytically, but the cusp condition cannot be satisfied in this case. Another problem is, that the long range behaviour of Gaussians is not of the correct type. Nevertheless Gaussian basis sets have been rather successfull  in molecular calculations.  Another basis that was used in the past  are Slater orbitals of the type $r_i^lexp(-\alpha r_i) Y_{lm}({\hat r_i})$. Both Gaussians as well as Slater orbitals do not constitute complete basis sets, which leads to the problem of basis dependence in molecular calculations.
+
+Using a finite element basis in Cartesian coordinates, which can be considered as complete on a finite parallelepiped in three dimensions in principle allows for a basis independent calculation, which can also be used to validate calculations done with, for example, Gaussian basis sets. Such calculations have been done by Batcho\cite{Batcho} and  Lehtovaara et al.\cite{Lehto}. In order to evaluate the Coulomb matrix elements specially shaped elements and intergration grids were used in both cases.
+
+In the present contribution I will present finite element calculations based on a product ansatz for the wave function, such that one function is chosen to {\it exactly} satisfy the cusp condition at each nuclei and the other function is calculated via requiring the variational principle for the wave function  to be satisfied. This leads to modified potential without Coulomb singularities.
+
+Results of both two and three dimensional calculations for simple molecules  such as  $H_2^+$ are presented, that were obtained using both using custom written Python/Fortran code as well as the hermes C++ library (\url{http://www.hpfem.org/hermes/}).
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{Kato}
+T. Kato, Commun. Pure Appl. Math {\bf 10} (151)
+
+\bibitem{Batcho}
+P. F. Batcho, Computational method for general multicenter electronic structure calculations,
+Phys. Rev. E {\bf 61} (6) (2000) 7169-7183
+
+\bibitem{Lehto}
+] L. Lehtovaara, V. Havu, M. Puska, All-electron density functional theory and time-dependent density functional theory with high-order ﬁnite elements, J. Chem. Phys.{\bf 131} (054103).
+
+\end{thebibliography}

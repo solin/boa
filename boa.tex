@@ -1,4 +1,4 @@
-\documentclass[article,A4,11pt]{llncs}%
+\documentclass[article,A4,11pt]{llncs}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -25,8 +25,6 @@
 %\newcommand{\tmtextsl}[1]{{\slshape{#1}}}
 %\newcommand{\tmtexttt}[1]{{\ttfamily{#1}}}
 
-
-
 \leftmargin=0.2cm
 \oddsidemargin=1.2cm
 \evensidemargin=0cm
@@ -35,7 +33,6 @@
 \textheight=21.5cm
 \pagestyle{plain}
 \setlength{\columnsep}{20pt}
-
 
 \def\m{\mathbf{m}}
 \def\H{\mathbf{H}}
@@ -62,6 +59,8 @@
 \def\um{$\mu$m}
 \def\C{$^{\circ}\mathrm{C}$}
 
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+
 \def\clovek#1{\noindent\bgroup\vbox{\noindent#1}\egroup\vskip1em}
 
 % DEFINITION OF CUSTOM FONT SIZE
@@ -73,17 +72,16 @@
 \usepackage{eso-pic}
 \newcommand\BackgroundPic{
 \put(0,0){
-\parbox[b][\paperheight]{\paperwidth}{%
+\parbox[b][\paperheight]{\paperwidth}{
 \vfill
 \centering
-\includegraphics[width=\paperwidth,height=\paperheight]{background_plzen.jpg}%
+\includegraphics[width=\paperwidth,height=\paperheight]{background.png}
 \vfill
 }}}
 
-% BEGIN DOCUMENT
 \begin{document}
 
-% inputting background image
+% INPUTTING BACKGROUND IMAGE
 \AddToShipoutPicture{\BackgroundPic}
 
 \vbox{}
@@ -97,7 +95,7 @@
 
 \newpage
 
-\section*{}%
+\section*{}
 
 \vspace*{60mm}
 ISBN ???-??-????-???-?\\ \\
@@ -152,7 +150,7 @@ May 9 - 13, 2011\\
 \end{center}
 \vspace{-3mm}
 
-\section*{Conference topics}%
+\section*{Conference topics}
 
 \begin{itemize}
   \item Computational methods in geosciences including, but not limited to, 
@@ -168,9 +166,7 @@ May 9 - 13, 2011\\
   \item Common platforms for scientific computing, interfacing and interoperability.
 \end{itemize}
 
-\subsection*{Scientific Committee}%
-
-%\hspace{4mm} 
+\subsection*{Scientific Committee}
 
 \begin{itemize}
 \item Valmor de Almeida (Oak Ridge National Laboratory, Oak Ridge, USA)
@@ -203,59 +199,70 @@ May 9 - 13, 2011\\
 
 \tableofcontents
 
+%--------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \part{Abstracts of Keynote Lectures}
 
 \pagestyle{plain}
 
-\input dawson.tex \newpage
-\input heroux.tex \newpage
-\input shadid.tex \newpage
-
+\input{dawson}\newpage % Prilis dlouhe
+\input{heroux}\newpage
+\input{shadid}\newpage % Prilis dlouhe
 
 %--------------------------------------------------------------------------------------
+
 \part{Abstracts of Contributed Lectures}
 
-% \input bala.tex \newpage % THIS PERSON SUBMITTED A BADLY FORMATTED WORD DOCUMENT
-\input berzins.tex \newpage
-\input bottcher.tex \newpage
-\input hakula.tex \newpage
-\input hansen.tex \newpage
-\input hernandez.tex \newpage
-\input husanu.tex \newpage
-\input jiang.tex \newpage
-\input kees.tex \newpage
-\input korous.tex \newpage
-\input kucerova.tex \newpage
-\input li.tex \newpage
-\input mcalpine.tex \newpage
-\input meeker.tex \newpage
-\input novak.tex \newpage
-\input paoluzzi.tex \newpage 
-\input persson.tex \newpage
-\input piskin.tex \newpage
-\input sinha.tex \newpage
-\input soto.tex \newpage
-%\input svacek.tex \newpage    #neprijede
-\input xudong_II.tex \newpage
-
-
-
-
+\input{azarenok}\newpage % Prilis dlouhe
+\input{celik}\newpage
+%\input bala.tex \newpage
+\input{berzins}\newpage
+\input{bottcher}\newpage
+\input{braun}\newpage
+\input{dolezel}\newpage
+\input{douglass_1}\newpage
+\input{douglass_2}\newpage
+\input{giani}\newpage
+\input{guardone}\newpage
+\input{hakula}\newpage
+\input{hansen}\newpage
+\input{hernandez}\newpage
+\input{husanu}\newpage
+\input{isola}\newpage
+\input{jiang_yusong}\newpage
+\input{juncai_xu}\newpage
+\input{karban_1}\newpage
+\input{karban_2}\newpage
+\input{kees}\newpage
+\input{korous}\newpage
+\input{lei}\newpage
+\input{li_shengtai}\newpage
+\input{li_xudong}\newpage
+\input{chenliang_li}\newpage
+\input{ma_zhonghua}\newpage
+\input{mcalpine}\newpage
+\input{meeker}\newpage
+\input{muhtaroglu}\newpage
+\input{novak}\newpage
+\input{owen}\newpage
+\input{paoluzzi}\newpage 
+%\input{persson}\newpage Nepouzita sablona
+\input{piskin}\newpage
+\input{pugal}\newpage
+\input{sejnoha}\newpage
+\input{shukla}\newpage
+\input{sinha}\newpage
+\input{soto}\newpage
+\input{svacek}\newpage
+\input{sykora}\newpage
+\input{xu_chao_1}\newpage
+\input{xu_chao_2}\newpage
 
 %--------------------------------------------------------------------------------------
-\newpage
-
+%--------------------------------------------------------------------------------------
 
 \part{List of Participants}
-
 \input addresses.tex
-
-%--------------------------------------------------------------------------------------
-%--------------------------------------------------------------------------------------
-%--------------------------------------------------------------------------------------
-
 
 \end{document}

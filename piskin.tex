@@ -1,57 +1,25 @@
-
-
-% *****************************
-% *   YOUR TEXT STARTS HERE   *
-% *****************************
-
 \title{Visualization of Blood Flow Simulation in Human Arteries}
-\author{} \institute{} % Intentionally left blank
+\author{} \institute{}
 \tocauthor{\underline{First Author}, Second Author, Third Author}
-\maketitle
+
 \begin{center}
-{\large \underline{Esra Baltaoglu}}\\
+\textbf{\Large Visualization of Blood Flow Simulation in Human Arteries}\\
+\vspace{10mm}
+{\large \underline{Esra Baltaoglu}, Senol Piskin, M. Serdar Celebi}\\
 Istanbul Technical University, Informatics Institute, Computational Science and
 Engineering Department\\
-{\tt esra.baltaoglu@be.itu.edu.tr}\\
-\vspace{4mm} % Use this space when including 3rd author
-{\large Senol Piskin}\\
-Istanbul Technical University, Informatics Institute, Computational Science and
-Engineering Department\\
-{\tt senol.piskin@itu.edu.tr}\\
-\vspace{4mm} % Use this space when including 3rd author
-{\large M. Serdar Celebi}\\
-Istanbul Technical University, Informatics Institute, Computational Science and
-Engineering Department\\
-{\tt mscelebi@be.itu.edu.tr}
+{\tt esra.baltaoglu@be.itu.edu.tr, senol.piskin@itu.edu.tr, mscelebi@be.itu.edu.tr}
 
 \end{center}
 
 \section*{Abstract}
 
-Flow in three dimensional (3D) human arteries is visualized using open source 
-visualization tools. The artery geometry is generated from scanned computed 
-tomography (CT) data of a real patient \cite{fsi2009,biomed}. The flow 
-simulation is based on transient Newtonian Navier - Stokes (NS) equations 
-\cite{cfd2010}. Since the simulation is transient, the visualization process is 
-time dependent. Therefore the pressure, velocity and wall shear stress (WSS) 
-values for each node are obtained at every time step of the simulation and 
-visualized. For two thousand time steps and over one million nodes, the amount 
-of raw data is big and need proper management. Visualization of this big raw 
-data is done on a parallel environment where each server has eight cores 
-(processors) and eight GB of RAM. During the postprocessing of the simulation 
-data, particles are injected into the fluid domain to visualize the pathlines. 
-At each time step one thousand particles are injected from the inlet of the 
-domain (artery geometry). So there are over one million active particles in the 
-geometry during the visualization. Study gives many important information about 
-the blood flow such as the regions with very low velocity, vortices at 
-enlargement regions and depositions of particles at bifurcations. This paper 
-gives the details of the generation of raw simulation data, injection of 
-particles to geometry and decomposition of raw data for parallel 
-post-processing. Also the speedup results of the parallelization of the process 
-are presented.
+Flow in three dimensional (3D) human arteries is visualized using open source visualization tools. The artery geometry is generated from scanned computed tomography (CT) data of a real patient \cite{fsi2009,biomed}. The flow simulation is based on transient Newtonian Navier - Stokes (NS) equations \cite{cfd2010}. Since the simulation is transient, the visualization process is time dependent. Therefore the pressure, velocity and wall shear stress (WSS) values for each node are obtained at every time step of the simulation and visualized. For two thousand time steps and over one million nodes, the amount of raw data is big and need proper management. Visualization of this big raw data is done on a parallel environment where each server has eight cores (processors) and eight GB of RAM. During the postprocessing of the simulation data, particles are injected into the fluid domain to visualize the pathlines. At each time step one thousand particles are injected from the inlet of the domain (artery geometry). So there are over one million active particles in the geometry during the visualization. Study gives many important information about the blood flow such as the regions with very low velocity, vortices at enlargement regions and depositions of particles at bifurcations. This paper 
+gives the details of the generation of raw simulation data, injection of particles to geometry and decomposition of raw data for parallel post-processing. Also the speedup results of the parallelization of the process are presented.
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
+
 \bibitem{fsi2009}
 {\sc Senol Piskin, Erke Aribas, and M. Serdar Celebi}. {Coupled Simulation of a 
 Carotid Artery Bifurcation Model}. 10TH Mesh Based parallel Code Coupling 
@@ -69,7 +37,3 @@ experimental inlet velocity profile}. Fifth European Conference on
 Computational Fluid Dynamics, Lisbon, Portugal (2010).
 
 \end{thebibliography}
-
-% ***************************
-% *   YOUR TEXT ENDS HERE   *
-% ***************************

@@ -1,51 +1,34 @@
+\title{Compression of large microstructural data sets via aperiodic tiling}
+\author{} \institute{}
+\tocauthor{\underline{Jan Nov\'{a}k}, Ani\v{c}ka Ku\v{c}erov\'{a}}
 
-% *****************************
-% *   YOUR TEXT STARTS HERE   *
-% *****************************
-
-\title{Compression of Large Microstructural Data Sets via Aperiodic Tiling}
-\author{} \institute{} % Intentionally left blank
-\tocauthor{\underline{Jan Nov\'{a}k}, Ani\v{c}ka Ku\v{c}erov\'{a}} \maketitle
 \begin{center}
+
+\textbf{\Large Compression of large microstructural data sets via aperiodic tiling}\\
+\vspace{10mm}
 {\large \underline{Jan Nov\'{a}k}}\\
 CTU in Prague, Faculty of Civil Engineering, Centre of Integrated Design of Advanced Structures, Th\'akurova 7, Prague, Czech Republic\\
 {\tt novakj@cml.fsv.cvut.cz}\\
-\vspace{4mm} % Use this space when including 3rd author
+\vspace{4mm}
 {\large Ani\v{c}ka Ku\v{c}erov\'{a}}\\
 CTU in Prague, Faculty of Civil Engineering, Department of Mechanics, Th\'akurova 7, Prague, Czech Republic\\
-{\tt anicka@cml.fsv.cvut.cz}\\
-\end{center}
+{\tt anicka@cml.fsv.cvut.cz}
 
-\renewcommand{\note}[1]{{\noindent\color{red}[#1]}}
+\end{center}
 
 \section*{Abstract}
 
-%\note{what's the main topic}\\
-The main objective of this paper is drawn toward the compression of large datasets determining the microstructure of macroscopic bodies or, vice versa, a qualitatively new technique of filling the infinite Euclidean space by an non-periodic microstructure from only few representative volume elements.
-%\note{what's the method based on}\\
-The proposed method is based on the concept of aperiodic tiling making use the lowest aperiodic set of Wang tiles discovered so far~\cite{Culik96}. Exploiting this approach, the entire information about the infinitely large 2D microstructure is reduced to only 13 squared tiles along with five different edges. It is worthwhile to note that the essential number of tiles to compose a three dimensional domain can be even smaller.
+The main objective of this paper is drawn toward the compression of large data sets determining the microstructure of macroscopic bodies or, vice versa, a qualitatively new technique of filling the infinite Euclidean space by a non-periodic microstructure from only few representative volume elements.
 
-%\note{how and motivation}\\
-Our goal is to investigate the effectiveness of optimization
-algorithms in forcing the pre-determined properties of required
-microstructure~\cite{Leps05}. Basically, it wrestles several
-constrains of two kinds. The first kind of issues, represented by
-the physical nature of simulated material, consists of forcing the
-prescribed volume fraction of each material's phase and
-characteristic length of the microstructure. Yet, the second
-concern is more artificial, as it includes the problem of
-interaction between contiguous tile edges and required overall
-materials behaviour (isotropy/anisotropy/orthotropy). The
-performance of proposed methodology is demonstrated on a simple
-planar benchmark of generating the microstructure of two-phase
-inclusion-like composite material. The method shows the potential
-to deal with one of the fundamental demerits of the recently
-emerging hybrid concept to analysis of microstructured materials
-across all scales of interest without the need of
-averaging~\cite{Novak10}.
+The proposed method is based on the concept of aperiodic tiling making use of as low aperiodic set of Wang tiles as possible~\cite{Cohen:2003:WTI:1201775.882265,Culik96}, which admit uncountably many valid tilings of the plane. Exploiting this approach, the entire information about the infinitely large two- or three-dimensional microstructure is reduced to only few squared or cubed tiles, respectively. Tiling seems to be a useful tool in multiscale analysis of aperiodic media with poor separation of scales when the homogenization techniques based on the periodic unit cell concept fail.
+
+Our goal is to investigate the effectiveness of optimization algorithms, see e.g.~\cite{Leps05}, in seeking for appropriate tile sets with respect to pre-determined properties of reconstructed microstructures. For this purpose, one has to wrestle several constrains of two basic kinds. The first kind of issues, represented by the physical nature of simulated material, consists of prescribing volume fraction of each material's phase and characteristic length of the microstructure. The second concern, yet more artificial, includes the problem of interaction between contiguous tile edges and required overall material behaviour (isotropy/anisotropy/orthotropy). The performance of the proposed methodology is demonstrated on a simple planar benchmark of generating the microstructure of a two-phase inclusion-like composite material. The method shows the potential to deal with one of the fundamental demerits of recently emerging hybrid concept to the analysis of microstructured materials across all scales of interest without the need of averaging~\cite{Novak10}. 
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
+
+\bibitem{Cohen:2003:WTI:1201775.882265}
+{\sc M.~F.~Cohen, J.~Shade, S.~Hiller, O.~Deussen}. {Wang Tiles for image and texture generation}. ACM Trans. Graph., 22, 3, p 287--294, (2003).
 
 \bibitem{Culik96}
 {\sc K.~Culik}.
@@ -58,7 +41,3 @@ averaging~\cite{Novak10}.
 {\sc J.~Nov\'{a}k, \L.~Kaczmarczyk, P.~Grassl, C.~J.~Pearce}. {Hybrid Analysis of Fibre Reinforced Polypropylene from Micro to Macro Scale}. Proceedings of the 10th International Conference on Computational Structures Technology, (2010).
 
 \end{thebibliography}
-
-% ***************************
-% *   YOUR TEXT ENDS HERE   *
-% ***************************

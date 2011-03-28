@@ -1,32 +1,29 @@
-
-% *****************************
-% *   YOUR TEXT STARTS HERE   *
-% *****************************
-
 \title{Heat Transport Simulation for CO$_2$ Enhanced Gas Recovery}
-\author{} \institute{} % Intentionally left blank
-\tocauthor{\underline{Norbert B\"ottcher}, Rudolf Liedl}
-\maketitle
+\author{} \institute{}
+\tocauthor{First Author, \underline{Second Author}}
+
 \begin{center}
+
+\textbf{\Large Heat Transport Simulation for CO$_2$ Enhanced Gas Recovery}\\
+\vspace{10mm}
 {\large \underline{Norbert B\"ottcher}, Rudolf Liedl}\\
 Technische Universit\"at Dresden\\
 Helmholtzstr. 10, 01062 Dresden, Germany\\
 {\tt norbert.boettcher@tu-dresden.de}\\
-\vspace{4mm} % Use this space when including 3rd author
+\vspace{4mm}
 {\large Ashok Singh, Olaf Kolditz}\\
 Helmholtz-Centre for Environmental Research - UFZ\\
 Permoserstr. 15, 04318 Leipzig, Germany
+
 \end{center}
 
 \section*{Abstract}
-
 
 Designing gas injection applications, the knowledge of the temperature development in a borehole or the nearby gas reservoir is of prime importance. If gas temperature drops too far, the gas will change its state rapidly that may cause a shock pressure, which can damage the borehole or the integrity of the nearby rock matrix. On the other hand, the gas cannot be warmed up to any temperature due to energy costs. To find the optimal injection temperature, numerical simulation is a suitable tool for planning and designing gas injection scenarios such as carbon dioxide sequestration applications. 
 
 In this work, we perform numerical simulations of compressible gas injection of carbon dioxide into a depleted natural gas reservoir using OpenGeoSys \cite{Wang2009}, an open source simulator based on a finite element method. The project goal is to find strategies to increase natural gas production on the one hand, and the sequestration of carbon dioxide on the other hand, known as enhanced gas recovery (EGR). The depleted reservoir resides in a depth of 3800~m, and the initial temperature is about 400~K. Injection of a cold gas will reduce the reservoir temperature. Additionally, gas temperature drops due to expansion and throttling in the reservoir according to the \textit{Joule-Thomson} \cite{SpaWag96} effect. Our simulations consider heat and mass transport in a multi-component fluid under non-isothermal conditions. Fluid properties (density, viscosity, thermal conductivity, Joule-Thomson coefficient) are determined using precise equations of state and correlation functions for gas mixtures \cite{Duan2008}.
 
 The simulation results show the influence of injection conditions on the temperature development in the vicinity of the borehole. We show several scenarios with different injection rates and the resulting reservoir condition development. Furthermore, it can be shown that the accuracy of constitutive equations is very relevant for simulation results, particularly for conditions close to the fluids phase boundaries. Our simulations can be used to find optimal injection conditions for a gas injection application.
-
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
@@ -46,9 +43,4 @@ The simulation results show the influence of injection conditions on the tempera
 \newblock{Densities of the CO$_2$-H$_2$O and CO$_2$-H$_2$O-NaCl Systems Up to 647 K and 100 MPa.} 
 \newblock{Energy \& Fuels 22 (2008), pp.~1666--1674.}
 
-
 \end{thebibliography}
-
-% ***************************
-% *   YOUR TEXT ENDS HERE   *
-% ***************************

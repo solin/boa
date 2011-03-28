@@ -1,0 +1,34 @@
+\title{A Smart Job Scheduler for Non-linear Finite Element Analyses on Cloud Computing Platforms}
+\author{} \institute{}
+\tocauthor{\underline{Nitel Muhtaroglu}, Ismail Ari}
+
+\begin{center}
+
+\textbf{\Large A Smart Job Scheduler for Non-linear Finite Element Analyses on Cloud Computing Platforms}\\
+\vspace{10mm}
+{\large  \underline{Nitel Muhtaroglu}, Ismail Ari}\\
+Ozyegin University, Kusbakisi Cad. No:2 34662 Altunizade Uskudar Istanbul, Turkey\\
+{\tt nitel.muhtaroglu@ozyegin.edu.tr, ismail.ari@ozyegin.edu.tr}
+
+\end{center}
+
+\section*{Abstract}
+
+Current practice on High Performance Computing (HPC) solutions require expensive hardware infrastructure and specially trained IT professionals. While hardware maintenance and IT management are not the main goal for many, significant time and effort is still spent on installing, administering, and tuning computing resources. Provisioning Cloud Computing (CC) infrastructure and platform services for handling HPC workloads, \emph{i.e.} offering and using ''HPC as a Service'' provides a feasible and sustainable solution. Such online services will be beneficial especially for small and medium enterprises, academic institutions, and individuals who don't possess the resources or skills necessary to maintain and effectively utilize HPC systems. In this work, we describe the issues encountered while developing a Finite Element Analysis (FEA) CC platform service and the smart job scheduler designed to address some of its challenges.
+
+One major challenge for an online FEA service is to continuously assure the service predictability in terms of computation time and solution accuracy in a multi-tenant environment. In our recent study~\cite{Muhtaroglu:PARENG11}, we characterized some representative linear FEA loads from the structural mechanics field and found the number of non-zero elements in the sparse system of linear equations to be the dominant factor affecting computational time and memory footprint. We developed a scheduler that could characterize a batch job and distribute the tasks to best matching resources to maximize the throughput and minimize the total execution time. However, we also know that our service users will have jobs modeled with non-linear geometric and material properties and have high expectations on the solution accuracy. Therefore, in depth analysis and comparison of both linear and non-linear FEA models are required. In this paper, we report our findings on these analyses and discuss how we automate our scheduler to handle mixed models, simultaneously. Our scheduler can effectively utilize multiple-cores in a single node and/or multiple-nodes using Message Passing Interface. We implement our service on top of an open-source FEA engine called CalculiX~\cite{Dhondt04}. As this is a timely subject, there is growing interest among the research community on providing public FEA cloud services \cite{SolinFemHub}.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{Muhtaroglu:PARENG11}
+{\sc N.~Muhtaroglu and I.~Ari}. {Smart Job Scheduling for High-Performance Cloud Computing Services}. Civil-Comp Press, Proceedings of the 2nd Int. Conf. on
+Parallel, Distributed, Grid and Cloud Computing for Engineering (2011)
+
+\bibitem{Dhondt04}
+{\sc G.~Dhondt}. {The FEM for Three-dimensional Thermomechanical Applications}. John Wiley \& Sons Ltd. (2004)
+
+\bibitem{SolinFemHub}
+{\sc P.~Solin}. {FEMHub Online Laboratory, University of Nevada, Reno, http://lab.femhub.org/}
+ 
+\end{thebibliography}

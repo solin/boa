@@ -1,0 +1,33 @@
+\title{Parallel Hexahedral Mesh Generation from Volume Fraction Data}
+\author{} \institute{}
+\tocauthor{\underline{Steven J. Owen}, Matthew L. Staten}
+
+\begin{center}
+
+\textbf{\Large Parallel Hexahedral Mesh Generation from Volume Fraction Data}\\
+\vspace{10mm}
+{\large \underline{Steven J. Owen}, Matthew L. Staten}\\
+Sandia National Laboratories, Albuquerque, NM, U.S.A.\\
+{\tt sjowen@sandia.gov, mlstate@sandia.gov}\\
+
+\end{center}
+
+\section*{Abstract}
+
+Computational simulation must often be performed on domains where materials are represented as scalar quantities or volume fractions at cell centers of an octree-based grid. Common examples include bio-medical, geotechnical or shock physics calculations where interface boundaries are represented only as discrete statistical approximations.  In this work, we introduce new parallel methods for generating Lagrangian computational meshes from Eulerian-based data. We focus especially on problems that model high speed impact and penetration phenomena that are generated from the Eulerian-based code, CTH \cite{CTH90}.  The resulting meshes are used in a finite-element based code for quasi-statics and dynamics simulations. 
+
+New procedures for generating all-hexahedral finite element meshes from volume fraction data are introduced which improve on existing techniques \cite{Zhang08}. A new primal-contouring approach is introduced for defining a geometric domain. New methods for, node smoothing, resolving non-manifold conditions, managing multiple conforming materials and defining geometry are also introduced. 
+
+We focus specifically on the parallel mesh generation problem, where each processor domain is a Cartesian grid which can be prescribed by an Eulerian-based code running in parallel.  Resolution of the serial-parallel consistency problem, or the ability to generate the same mesh, regardless of the number of processors is also demonstrated with this work. We describe the methods used for achieving this condition.
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{CTH90}
+{\sc J.M.~McGlaun, S.L.~Thompson and M.G.~Elrick}. {CTH: A three-dimensional shock wave physics code}. Int. J. Impact Analysis 10 (1990), pp.~351-360.
+
+\bibitem{Zhang08}
+{\sc Y.~Zhang, T.~Hughes and C.~Bajaj}. {Automatic 3D Mesh Generation for a Domain with Multiple Materials}. Proc. 16th Int. Meshing Roundtable. (2008), pp.~367--386.
+
+\end{thebibliography}

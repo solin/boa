@@ -1,22 +1,15 @@
+\title{An Efficient Finite Element Scheme to Simulate Blast and Impact Coupled Fluid/Structure Problems}
+\author{} \institute{}
+\tocauthor{\underline{Orlando Soto}, Joseph Baum, Rainald L\"ohner}
 
-% *****************************
-% *   YOUR TEXT STARTS HERE   *
-% *****************************
-
-\title{An Efficient Finite Element Scheme to Simulate Blast and Impact Coupled
-  Fluid/Structure Problems}
-\author{} \institute{} % Intentionally left blank
-\tocauthor{\underline{Orlando Soto},~~{Joseph Baum},~~{Rainald L\"ohner}}
-\maketitle
 \begin{center}
-{\large \underline{Orlando Soto}}\\
+
+\textbf{\Large An Efficient Finite Element Scheme to Simulate Blast and Impact Coupled Fluid/Structure Problems}\\
+\vspace{10mm}
+{\large \underline{Orlando Soto}, Joseph Baum}\\
 SAIC - 1710 Saic Dr. MSN 2-6-9 - Mclean, VA 22102, USA\\
-{\tt orlando.a.soto@saic.com}\\
-\vspace{4mm} % Use this space when including 3rd author
-{\large Joseph Baum}\\
-SAIC - 1710 Saic Dr. MSN 2-6-9 - Mclean, VA 22102, USA\\
-{\tt joseph.d.baum@saic.com} \\
-\vspace{4mm} % Use this space when including 3rd author
+{\tt orlando.a.soto@saic.com, joseph.d.baum@saic.com}\\
+\vspace{4mm}
 {\large Rainald L\"ohner}\\
 GMU - 4400 University Drive MS 6A2 - Fairfax, VA 22030, USA\\
 {\tt rlohner@gmu.edu}
@@ -24,56 +17,20 @@ GMU - 4400 University Drive MS 6A2 - Fairfax, VA 22030, USA\\
 
 \section*{Abstract}
 
-In this work an efficient finite element (FE) scheme to model blast and impact
-coupled fluid-solid problems is presented. Its main ingredients are: an
-OSS-Q1/P0 element (tri-linear hexahedra with
-constant pressure and Orthogonal Sub-grid Scale stabilization), a 
-large-strain finite  element (FE) convective formulation, a phenomenological
-concrete model 
-to  deal with damage and fracture of concrete structures, and a general
-contact algorithm  which uses bin technology to perform the node-face
-searching operations in a parallel manner. All the schemes have been fully
-parallelized and coupled using a loose-embedded procedure with
-the CFD (computational fluid dynamics) code FEFLO.
+In this work an efficient finite element (FE) scheme to model blast and impact coupled fluid-solid problems is presented. Its main ingredients are: an OSS-Q1/P0 element (tri-linear hexahedra with constant pressure and Orthogonal Sub-grid Scale stabilization), a large-strain finite  element (FE) convective formulation, a phenomenological concrete model to  deal with damage and fracture of concrete structures, and a general contact algorithm  which uses bin technology to perform the node-face searching operations in a parallel manner. All the schemes have been fully parallelized and coupled using a loose-embedded procedure with the CFD (computational fluid dynamics) code FEFLO.
 
-Even though it can not be
-proved that the Q1/P0 element is suitable for incompressible problems like
-the pseudo-plastic flow of concrete at high pressures (the element is
-not div-stable), it is utilized and works in an acceptable manner for
-many real applications. Nevertheless, spurious pressure
-oscillations (the chessboard mode) may
-appear in several simulation time steps, which
-pose a serious challenge for blast cases that require an
-accurate modeling of the material damage to evaluate crack propagation and
-fragment formation. Therefore, we follow the idea showed in
-\cite{ref1} where linear elements have been stabilized using an OSS scheme
-for flow problems: we improved the pressure
-stability of the Q1/P0 
-element by adding the OSS terms to the standard FE
-Galerkin formulation. It can be proved that the stabilized scheme is
-consistent and stable, hence, its solution converges to the solution of the
-boundary value problem that is being approximated (i.e. the right physical
-problem). Details of the concrete material model (K\&C), the FSI (Fluid Solid
-Interaction) procedure and the contact algorithm, may be consulted in
-\cite{ref3}. They will also be briefly described in the final paper. A real 3D
-coupled Fluid/Structure simulation with experimental comparisons will be also
-presented.
+Even though it can not be proved that the Q1/P0 element is suitable for incompressible problems like the pseudo-plastic flow of concrete at high pressures (the element is not div-stable), it is utilized and works in an acceptable manner for many real applications. Nevertheless, spurious pressure oscillations (the chessboard mode) may appear in several simulation time steps, which pose a serious challenge for blast cases that require an accurate modeling of the material damage to evaluate crack propagation and fragment formation. Therefore, we follow the idea showed in \cite{ref1} where linear elements have been stabilized using an OSS scheme
+for flow problems: we improved the pressure stability of the Q1/P0  element by adding the OSS terms to the standard FE Galerkin formulation. It can be proved that the stabilized scheme is consistent and stable, hence, its solution converges to the solution of the boundary value problem that is being approximated (i.e. the right physical problem). Details of the concrete material model (K\&C), the FSI (Fluid Solid Interaction) procedure and the contact algorithm, may be consulted in \cite{ref3}. They will also be briefly described in the final paper. A real 3D coupled Fluid/Structure simulation with experimental comparisons will be also presented.
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
 
 \bibitem{ref1}
-{\sc R.~Codina}. {On stabilized finite element methods for linear systems of
-  convection-diffusion- reaction equations}. Computer Methods in Applied
+{\sc R.~Codina}. {On stabilized finite element methods for linear systems of convection-diffusion- reaction equations}. Computer Methods in Applied
 Mechanics and Engineering. 188 (2000), pp.~61--82.
 
 \bibitem{ref3}
-{\sc O.~Soto, J.~Baum and R.~L\"ohner}. {An efficient fluid-solid coupled
-  finite element scheme for weapon fragmentation simulations}. Engineering
+{\sc O.~Soto, J.~Baum and R.~L\"ohner}. {An efficient fluid-solid coupled finite element scheme for weapon fragmentation simulations}. Engineering
 Fracture Mechanics. 77 (2010), pp.~549--564.
 
 \end{thebibliography}
-
-% ***************************
-% *   YOUR TEXT ENDS HERE   *
-% ***************************

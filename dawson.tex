@@ -1,70 +1,36 @@
-
-% *****************************
-% *   YOUR TEXT STARTS HERE   *
-% *****************************
-
 \title{Finite Elements in Coastal Ocean Circulation Modeling}
-\author{} \institute{} % Intentionally left blank
-\tocauthor{Clint Dawson}
-\maketitle
+\author{Clint Dawson} \institute{The University of Texas at Austin}
+
 \begin{center}
+
+\textbf{\Large Finite Elements in Coastal Ocean Circulation Modeling}\\
+\vspace{10mm}
 {\large Clint Dawson}\\
 1 University Station, C0200 \\
 The University of Texas at Austin \\
 Austin, TX  78712 \\
-{\tt clint@ices.utexas.edu}\\
-%\vspace{4mm} % Use this space when including 3rd author
-%{\large \underline{Second Author}}\\
-%Address of Second Author\\
-%{\tt email@of.second.author}
+{\tt clint@ices.utexas.edu}
+
 \end{center}
 
 \section*{Abstract}
 
-Finite element methods of various types have been implemented
-by a number of researchers for modeling global
-and regional ocean
-circulation.  In this talk, we will discuss and compare two approaches investigated by the author and several collaborators 
-for modeling circulation in the coastal ocean: 
-a continuous Galerkin finite element
-method based on the generalized wave continuity equation (GWCE)
- \cite{LynchGray79}, and a discontinuous Galerkin (DG) formulation
-\cite{ad1,kub} based on the primitive form of the shallow water equations.  
+Finite element methods of various types have been implemented by a number of researchers for modeling global and regional ocean circulation.  In this talk, we will discuss and compare two approaches investigated by the author and several collaborators for modeling circulation in the coastal ocean: a continuous Galerkin finite element method based on the generalized wave continuity equation (GWCE) \cite{LynchGray79}, and a discontinuous Galerkin (DG) formulation \cite{ad1,kub} based on the primitive form of the shallow water equations.
 
-The GWCE is the basis
-for the Advanced Circulation (ADCIRC) model \cite{Luettich92}, which is a widely
-used quasi-operational shallow water simulator.    While this model
-has been shown to work well in many ``real-world'' situations, such
-as in modeling hurricane storm surges in the Gulf coast of the U.S.
-\cite{bunya,dietrich,MWR-Gustav}, it suffers from some drawbacks, including mass
-conservation errors, stability isues, and is restricted to low order
-approximations.  The DG formulation has certain potential advantages,
-including local mass conservation, the use of numerical fluxes and slope-limiters
-to prevent spurious oscillations, and the ability to use higher-order approximations locally within an element \cite{kub-p}.  
+The GWCE is the basis for the Advanced Circulation (ADCIRC) model \cite{Luettich92}, which is a widely used quasi-operational shallow water simulator.    While this model has been shown to work well in many ``real-world'' situations, such as in modeling hurricane storm surges in the Gulf coast of the U.S. \cite{bunya,dietrich,MWR-Gustav}, it suffers from some drawbacks, including mass conservation errors, stability isues, and is restricted to low order approximations.  The DG formulation has certain potential advantages, including local mass conservation, the use of numerical fluxes and slope-limiters to prevent spurious oscillations, and the ability to use higher-order approximations locally within an element \cite{kub-p}.
 
-We will compare both methods 
-for standard model problems, examining both accuracy and parallel
-efficiency.  We will also discuss how features particular to coastal regions, such as wetting/drying and levees, are handled in each model. Finally, we will discuss results for
-both models  applied to actual hurricanes
-along the Gulf of Mexico coast, including Hurricane Ike, which hit Texas 
-in 2008.  We will conclude with a discussion of current challenges and future research
-directions.
-
-
+We will compare both methods for standard model problems, examining both accuracy and parallel efficiency.  We will also discuss how features particular to coastal regions, such as wetting/drying and levees, are handled in each model. Finally, we will discuss results for both models  applied to actual hurricanes along the Gulf of Mexico coast, including Hurricane Ike, which hit Texas in 2008.  We will conclude with a discussion of current challenges and future research directions.
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
 
 \bibitem{LynchGray79} D. R. Lynch and W. R. Gray, A wave equation model for finite element computations, Computers and Fluids, 7, pp.\ 207-228, 1979.  
 
-\bibitem{ad1} V.~Aizinger, C.~Dawson, A discontinuous Galerkin
-method for two-dimensional flow and transport in shallow water,
-Advances in Water Resources, 25, pp.\ 67-84, 2002
+\bibitem{ad1} V.~Aizinger, C.~Dawson, A discontinuous Galerkin method for two-dimensional flow and transport in shallow water, Advances in Water Resources, 25, pp.\ 67-84, 2002
 
 \bibitem{kub} E.J.~Kubatko, J.J.~Westerink, C.~Dawson, $hp$ Discontinuous Galerkin methods for advection dominated problems in shallow water flow, Comput.~Meth.~Appl.~Mech.~Engrg.~196, pp. 437--451, 2006.
 
-\bibitem{Luettich92} R. A. Luettich, J. J. Westerink and N. W. Scheffner, 
-ADCIRC: An advanced three-dimensional circulation model for shelves, coasts and estuaries, Report 1: Theory and methodology of ADCIRC-2DDI and ADCIRC-3DL, Dredging Research Program Technical Report DRP-92-6, U.S. Army Engineers Waterways Experiment Station, Vicksburg, MS, 1992.  
+\bibitem{Luettich92} R. A. Luettich, J. J. Westerink and N. W. Scheffner,  ADCIRC: An advanced three-dimensional circulation model for shelves, coasts and estuaries, Report 1: Theory and methodology of ADCIRC-2DDI and ADCIRC-3DL, Dredging Research Program Technical Report DRP-92-6, U.S. Army Engineers Waterways Experiment Station, Vicksburg, MS, 1992.  
 
 
 \bibitem{bunya} S.~Bunya, J.C.~Dietrich, J.J.~Westerink, B.A.~Ebersole, J.M.~Smith,  J.H.~Atkinson, R.~Jensen, D.T.~Resio, R.A.~Luettich, C.~Dawson, V.J.~Cardone, A.T.~Cox, M.D.~Powell, H.J.~Westerink, H.J.~Roberts, A high-resolution coupled riverine flow, tide, wind, wind wave and storm surge model for Southern Louisiana and Mississippi: Part I - Model development and validation, Monthly Weather Review, 138, pp. 345--377, DOI: 10.1175/2009MWR2906.1, 2010.  
@@ -72,14 +38,8 @@ ADCIRC: An advanced three-dimensional circulation model for shelves, coasts and 
 
 \bibitem{dietrich} J.C.~Dietrich, S.~Bunya, J.J.~Westerink, B.A.~Ebersole, J.M.~Smith,  J.H.~Atkinson, R.~Jensen, D.T.~Resio, R.A.~Luettich, C.~Dawson, V.J.~Cardone, A.T.~Cox, M.D.~Powell, H.J.~Westerink and H.J.~Roberts, A high-resolution coupled riverine flow, tide, wind, wind wave and storm surge model for Southern Louisiana and Mississippi: Part II - Synoptic description and analyses of Hurricanes Katrina and Rita, Monthly Weather Review, 138, pp.\ 378--404, DOI: 10.1175/2009MWR2907.1, 2010.
 
-\bibitem{MWR-Gustav} J.C.~Dietrich, J.J.~Westerink, A.B.~Kennedy, J.M.~Smith,
-R.~Jensen, M.~Zijlema, L.H.~Holthuijsen, C.~Dawson, R.A.~Luettich, Jr., M.D.~Powell, V.J.~Cardone, A.T.~Cox, G.W.~Stone, M.E.~Hope, S.~Tanaka, L.G.~Westerink,
-H.J.~Westerink, and Z.~Cobell, Hurricane Gustav (2008) waves, storm surge and currents:  Hindcast and synoptic analysis in Southern Louisiana, submitted to Monthly Weather Review.
+\bibitem{MWR-Gustav} J.C.~Dietrich, J.J.~Westerink, A.B.~Kennedy, J.M.~Smith,R.~Jensen, M.~Zijlema, L.H.~Holthuijsen, C.~Dawson, R.A.~Luettich, Jr., M.D.~Powell, V.J.~Cardone, A.T.~Cox, G.W.~Stone, M.E.~Hope, S.~Tanaka, L.G.~Westerink, H.J.~Westerink, and Z.~Cobell, Hurricane Gustav (2008) waves, storm surge and currents:  Hindcast and synoptic analysis in Southern Louisiana, submitted to Monthly Weather Review.
 
 \bibitem{kub-p} E.~Kubatko, S.~Bunya, C.~Dawson and J.J.~Westerink, Dynamic $p$-adaptive Runge-Kutta discontinuous Galerkin methods for the shallow water equations, Comput.~Methods Appl.~Mech.~Engrg., 198, pp.\ 1766--1774, 2009.
 
 \end{thebibliography}
-
-% ***************************
-% *   YOUR TEXT ENDS HERE   *
-% ***************************
