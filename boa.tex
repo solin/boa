@@ -2,21 +2,18 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
-
-\usepackage{epsf,times}
 \usepackage{amsfonts}
+\usepackage{mathrsfs, bm}
+
 \usepackage{graphicx}
-\usepackage{mathrsfs}
-\usepackage{wrapfig}
-
-\usepackage{color}
-\usepackage{amsmath,mathrsfs,bm}
-\usepackage{cases}
-\usepackage{subfig}
-\usepackage{multicol}
 \usepackage{tabularx}
+\usepackage{subfig}
+\usepackage{epsf,times}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{cases}
+\usepackage{multicol}
 
-% DIMIER
 \usepackage[T1]{fontenc}
 %\newcommand{\tmname}[1]{\textsc{#1}}
 %\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
@@ -45,12 +42,6 @@
 \def\hvec{\overline{\mathbf{h}}}
 \def\evec{\overline{\mathbf{e}}}
 
-\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
-%\leftmargin=0cm
-%\oddsidemargin=1cm
-%\textwidth=14cm
-%\pagestyle{plain}
-
 \newcommand{ \etal}{\mbox{\emph{et al. }}}
 
 \newcommand\vect[1]{\mbf{#1}}
@@ -61,12 +52,14 @@
 
 \newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
 
-\def\clovek#1{\noindent\bgroup\vbox{\noindent#1}\egroup\vskip1em}
-
 % DEFINITION OF CUSTOM FONT SIZE
 \newcommand{\customfontA}{\fontsize{50}{55}\selectfont}
 \newcommand{\customfontB}{\fontsize{14.4}{20}\selectfont}
 \newcommand{\customfontC}{\fontsize{30}{35}\selectfont}
+
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\def\clovek#1{\noindent\bgroup\vbox{\noindent#1}\egroup\vskip1em}
 
 % TO INPUT BACKGROUND IMAGE
 \usepackage{eso-pic}
@@ -83,16 +76,11 @@
 
 % INPUTTING BACKGROUND IMAGE
 \AddToShipoutPicture{\BackgroundPic}
-
 \vbox{}
 \pagestyle{empty}
-
 \newpage
-
 \textwidth=15.5cm
-
 \ClearShipoutPicture
-
 \newpage
 
 \section*{}
@@ -114,17 +102,17 @@ FEMTEC 2011:
 \noindent
 \begin{tabular}{ll}
 Editors: & Pavel Solin (University of Nevada, Reno \& Institute of Thermomechanics, Prague) \\
- & Glen Hansen (Idaho National Laboratory)\\
- & Pavel Karban (University of West Bohemia, Pilsen) \\
- & Chris Kees (U.S. Army R\&D Center, Vicksburg, Mississippi) \\
- & Darko Koracin, Matt Reeves (Desert Research Institute, Reno) \\
+& Glen Hansen (Idaho National Laboratory)\\
+& Pavel Karban (University of West Bohemia, Pilsen) \\
+& Chris Kees (U.S. Army R\&D Center, Vicksburg, Mississippi) \\
+& Darko Koracin, Matt Reeves (Desert Research Institute, Reno) \\
 Publisher: & University of Nevada, Reno \\
- & 1664 North Virginia Street \\
- & Reno, NV 89557 - 0084\\
- & U.S.A.\\
+& 1664 North Virginia Street \\
+& Reno, NV 89557 - 0084\\
+& U.S.A.\\
 Printed by: & XXXXXXXXX \\
- & XXXXXXXXX\\
- & XXXXXXXXX\\
+& XXXXXXXXX\\
+& XXXXXXXXX\\
 Year: & 2011\\
 \end{tabular}
 
@@ -153,17 +141,17 @@ May 9 - 13, 2011\\
 \section*{Conference topics}
 
 \begin{itemize}
-  \item Computational methods in geosciences including, but not limited to, 
-        atmospheric sciences (weather and climate), hydrology, geology, 
-        atmospheric chemistry, air pollution, and related disciplines. 
-  \item Computational methods in nuclear, mechanical, civil, electrical, and 
-        other engineering fields. 
-  \item Mesh generation and scientific visualization. 
-  \item Open-source scientific computing software.
-  \item Interactive browser tools, web-based computing and visualization.
-  \item Python in open source scientific computing projects.
-  \item Novel scientific computing tools such as SciPy, NumPy, SymPy etc.
-  \item Common platforms for scientific computing, interfacing and interoperability.
+\item Computational methods in geosciences including, but not limited to, 
+      atmospheric sciences (weather and climate), hydrology, geology, 
+      atmospheric chemistry, air pollution, and related disciplines. 
+\item Computational methods in nuclear, mechanical, civil, electrical, and 
+      other engineering fields. 
+\item Mesh generation and scientific visualization. 
+\item Open-source scientific computing software.
+\item Interactive browser tools, web-based computing and visualization.
+\item Python in open source scientific computing projects.
+\item Novel scientific computing tools such as SciPy, NumPy, SymPy etc.
+\item Common platforms for scientific computing, interfacing and interoperability.
 \end{itemize}
 
 \subsection*{Scientific Committee}
@@ -196,73 +184,103 @@ May 9 - 13, 2011\\
 
 \newpage
 {\ }
-
 \tableofcontents
+\pagestyle{plain}
 
 %--------------------------------------------------------------------------------------
 %--------------------------------------------------------------------------------------
 
 \part{Abstracts of Keynote Lectures}
 
-\pagestyle{plain}
-
-\input{dawson}\newpage % Prilis dlouhe
+\input{dawson}\newpage
 \input{heroux}\newpage
-\input{shadid}\newpage % Prilis dlouhe
+\input{shadid}\newpage
 
 %--------------------------------------------------------------------------------------
 
 \part{Abstracts of Contributed Lectures}
 
+\input{austin}\newpage
+\input{almeida}\newpage % Prilis dlouhe
+\input{altekin}\newpage
 \input{azarenok}\newpage % Prilis dlouhe
-\input{celik}\newpage
-%\input bala.tex \newpage
-\input{berzins}\newpage
+\input{belu_1}\newpage
+\input{belu_2}\newpage
+\input{berzins}\newpage % Prilis dlouhe
+\input{bhaskar}\newpage
 \input{bottcher}\newpage
 \input{braun}\newpage
+\input{celik}\newpage
+\input{chavan}\newpage
+\input{diaz}\newpage
+\input{dobrev}\newpage
 \input{dolezel}\newpage
 \input{douglass_1}\newpage
 \input{douglass_2}\newpage
+\input{durand}\newpage
+\input{ebeida}\newpage
+\input{fujii}\newpage
 \input{giani}\newpage
 \input{guardone}\newpage
 \input{hakula}\newpage
 \input{hansen}\newpage
 \input{hernandez}\newpage
+\input{heys}\newpage
 \input{husanu}\newpage
 \input{isola}\newpage
-\input{jiang_yusong}\newpage
-\input{juncai_xu}\newpage
-\input{karban_1}\newpage
-\input{karban_2}\newpage
+\input{jayaraman}\newpage
+\input{jiang_jinhua}\newpage % Prilis dlouhe
+\input{karban}\newpage
 \input{kees}\newpage
+\input{kittipichai}\newpage % Prilis dlouhe
 \input{korous}\newpage
+\input{kumar}\newpage
 \input{lei}\newpage
 \input{li_shengtai}\newpage
-\input{li_xudong}\newpage
-\input{chenliang_li}\newpage
+\input{li_chenliang}\newpage
+\input{mach}\newpage
 \input{ma_zhonghua}\newpage
 \input{mcalpine}\newpage
 \input{meeker}\newpage
 \input{muhtaroglu}\newpage
 \input{novak}\newpage
 \input{owen}\newpage
-\input{paoluzzi}\newpage 
-%\input{persson}\newpage Nepouzita sablona
+\input{paoluzzi}\newpage
+\input{persson}\newpage
+\input{peterseim}\newpage
 \input{piskin}\newpage
 \input{pugal}\newpage
+\input{ramabathiran}\newpage
+\input{reid}\newpage % Chyby informace o autorovi
+\input{roca}\newpage
 \input{sejnoha}\newpage
+\input{sheel}\newpage
 \input{shukla}\newpage
-\input{sinha}\newpage
+\input{shen_1}\newpage
+\input{shen_2}\newpage
+\input{sheng}\newpage
+\input{shen_zhenzhong}\newpage
+\input{slodicka}\newpage
 \input{soto}\newpage
+\input{su_chao}\newpage
+\input{su_lin_1}\newpage
+\input{su_lin_2}\newpage
 \input{svacek}\newpage
-\input{sykora}\newpage
-\input{xu_chao_1}\newpage
-\input{xu_chao_2}\newpage
+\input{sykora_1}\newpage
+\input{sykora_2}\newpage
+\input{touzani}\newpage
+\input{trommler}\newpage
+\input{vorel}\newpage
+\input{walther}\newpage % Prilis dlouhe
+\input{wassgren}\newpage
+\input{witkowski}\newpage
+\input{xu_zhang}\newpage
+\input{zhao}\newpage
 
 %--------------------------------------------------------------------------------------
 %--------------------------------------------------------------------------------------
 
-\part{List of Participants}
-\input addresses.tex
+%\part{List of Participants}
+%\input{addresses}
 
 \end{document}

@@ -1,32 +1,27 @@
 \title{Improved Continuum Skin and Proximity Effect Model for Hexagonally Packed Wires}
-\author{David Meeker} \institute{QinetiQ North America}
+\author{} \institute{}
+\tocauthor{D.~Meeker}
+\maketitle
 
 \begin{center}
-
-\textbf{\Large Improved Continuum Skin and Proximity Effect Model for Hexagonally Packed Wires}\\
-\vspace{10mm}
 {\large David Meeker}\\
-QinetiQ North America\\
-350 Second Avenue \\
-Waltham, MA 02451 \\
+QinetiQ North America, Waltham\\
 {\tt dmeeker@ieee.org}
-
 \end{center}
 
 \section*{Abstract}
-
 This work develops accurate closed-form expressions for ``effective'' complex-valued magnetic permeability and electric conductivity that represent the effects of proximity and hysteresis losses in wound coils. These material properties can then be used in 2D/axisymmetric finite element models in which the coil is modeled as a coarsely meshed, homogeneous region ({\em i.e.} removing the need for modeling each turn in the coil). The practically useful case of circular wires in a hexagonal packed coil is addressed.
 
 A novel method for computing effective material properties via 2D finite elements is presented. Effective material property results are tabulated over a wide range of frequencies and packing factors using these methods. Closed-form expressions for approximating these results are then presented. These closed-form expressions yield improved accuracy over previous expressions based on an equivalent foil approach, especially at very high or very low packing factors. Several examples demonstrate good agreement between between total losses computed from a homogenized coil model with those computed from a model in which each turn is individually modeled.
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
+\bibitem{Moreau}
+\textsc{O. Moreau, L. Popiel, and J. L. Pages}. {Proximity losses computation with a 2D complex permeability modelling}. \emph{IEEE Trans. Magn.}, vol. 34, pp. 3616-3619, Sept. 1998.
 
-\bibitem{Moreau} O. Moreau, L. Popiel, and J. L. Pages,``Proximity losses computation with a 2D complex permeability modelling,'' \emph{IEEE Trans. Magn.}, vol. 34, pp. 3616-3619, Sept. 1998.
-
-\bibitem{Gyselinck} J. Gyselinck and P. Dular, ``Frequency-domain homogenization of bundles of wires in 2-D magnetodynamic FE calculations,'' \emph{IEEE Trans. Magn.}, vol. 41, pp. 1416-1419, May 2005.
+\bibitem{Gyselinck}
+\textsc{J. Gyselinck and P. Dular}. {Frequency-domain homogenization of bundles of wires in 2-D magnetodynamic FE calculations}. \emph{IEEE Trans. Magn.}, vol. 41, pp. 1416-1419, May 2005.
 
 \bibitem{Meeker}
-D. C. Meeker,''Effective Material Properties of Wound Coils from an Equivalent Foil Approach'', {\tt http://www.femm.info/examples/prox/notes.pdf}.
-
+\textsc{D. C. Meeker}. {Effective Material Properties of Wound Coils from an Equivalent Foil Approach}. {http://www.femm.info/examples/prox/notes.pdf}.
 \end{thebibliography}

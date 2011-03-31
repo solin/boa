@@ -1,65 +1,47 @@
 \title{Uintah - an Adaptive Scalable Framework for Fluid Structure Interaction}
 \author{} \institute{}
-\tocauthor{\underline{Martin Berzins}, Justin Luitjens, Qingyu Meng, Todd Harman, Charles A. Wight, Joseph R. Peterson}
+\tocauthor{\underline{M.~Berzins}, J.~Luitjens, Q.~Meng, T.~Harman, C.~A.~Wight, J.~R.~Peterson}
+\maketitle
 
 \begin{center}
-
-\textbf{\Large Uintah - an Adaptive Scalable Framework for Fluid Structure Interaction}\\
-\vspace{10mm}
 {\underline{Martin Berzins}, Justin Luitjens, Qingyu Meng}\\
-SCI Institute, University of Utah, Salt Lake City UT 84112\\
-{\tt mb@cs.utah.edu, luitjens@cs.utah.edu,  qymeng@cs.utah.edu}
+SCI Institute, University of Utah\\
+{\tt mb@cs.utah.edu, luitjens@cs.utah.edu,  qymeng@cs.utah.edu}\\
 \vspace{4mm}
-{\large Todd Harman}\\
-Department of Mechanical Engineering, University of Utah, Salt Lake City UT 84112\\
-\vspace{4mm}
-{\tt T.Harman@utah.edu}
-{\large Charles A. Wight, Joseph R. Peterson}\\
-Department of Chemistry, University of Utah, Salt Lake City UT 84112\\
-{\tt Chuck.Wight@utah.edu, Joseph.R.Peterson@utah.edu}
 
+{\large Todd Harman}\\
+Department of Mechanical Engineering, University of Utah\\
+{\tt T.Harman@utah.edu}\\
+\vspace{4mm}
+
+{\large Charles A. Wight, Joseph R. Peterson}\\
+Department of Chemistry, University of Utah\\
+{\tt Chuck.Wight@utah.edu, Joseph.R.Peterson@utah.edu}
 \end{center}
 
 \section*{Abstract}
-
 The Uintah Software has been developed over the last decade \cite{csafe2,csafe3} to solve fluid-structure interaction problems on structured adaptive grids on large-scale, long-running, data-intensive problems, \cite{fourthmit}. Uintah uses flow solvers linked to a particle method utlizing a finite element type formulation. The challenge of making Uintah scale to large numbers of cores on realistic engineering applications is addressed in this presentation. Uintah uses a particularly simple block-structured AMR method, \cite{IPDPS10}. The scalability of this method is contrasted with the Berger-Rigoutsos approach \cite{BergerRigoutsos}. Uintah uses a novel asynchronous task-based approach with fully automated load balancing. This involves out of order execution of tasks \cite{Meng}  and measurement-based load balancing. The application of Uintah to a petascale problem in hazard analysis arising from {\it sympathetic} explosions in which the collective interactions of a large ensemble of explosives results in dramatically increased explosion violence, is considered, \cite{Ber2010b}. The advances in scalability and combustion modeling needed to begin to solve this problem are discussed and illustrated by prototypical computational results. Finally the challenges of multicore architectures, are considered as is the potential for high-order methods (e.g. Discontinuous Galerkin) to compute solutions with the least energy use per significant digit of accuracy.
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
-
 \bibitem{BergerRigoutsos}
-M.~Berger and I.~Rigoutsos.
-\newblock An algorithm for point clustering and grid generation.
-\newblock {\em IEEE Trans. Systems Man Cybernet.}, 21(5):1278--1286, 1991.
+\textsc{M.~Berger and I.~Rigoutsos}. {An algorithm for point clustering and grid generation}. {\em IEEE Trans. Systems Man Cybernet.}, 21(5):1278--1286, 1991.
 
 \bibitem{Ber2010b}
-M.~Berzins, J.~Luitjens, Q.~Meng, T.~Harman, C.~Wight, and J.~Peterson.
-\newblock Uintah - a scalable framework for hazard analysis.
-\newblock In {\em Proceedings of the Teragrid 2010 Conference}, number~3, page (published online), 2010.
+\textsc{M.~Berzins, J.~Luitjens, Q.~Meng, T.~Harman, C.~Wight, and J.~Peterson}. {Uintah - a scalable framework for hazard analysis.} {\em Proceedings of the Teragrid 2010 Conference}, number~3, page (published online), 2010.
 
 \bibitem{csafe2}
-J.~D. de~St.~Germain, J.~McCorquodale, S.~G. Parker, and C.~R. Johnson.
-\newblock {U}intah: {A} massively parallel problem solving environment.
-\newblock In {\em Ninth {IEEE} International Symposium on High Performance and Distributed Computing}, pages 33--41. {IEEE}, Piscataway, NJ, November 2000.
+\textsc{J.~D. de~St.~Germain, J.~McCorquodale, S.~G. Parker, and C.~R. Johnson}. {{U}intah: {A} massively parallel problem solving environment}. In {\em Ninth {IEEE} International Symposium on High Performance and Distributed Computing}, pages 33--41. {IEEE}, Piscataway, NJ, November 2000.
 
 \bibitem{fourthmit}
-J.~E. Guilkey, T.~B. Harman, and B.~Banerjee.
-\newblock An eulerian-lagrangian approach for simulating explosions of energetic devices.
-\newblock {\em Computers and Structures}, 85:660--674, 2007.
+\textsc{J.~E. Guilkey, T.~B. Harman, and B.~Banerjee}. {An eulerian-lagrangian approach for simulating explosions of energetic devices}. {\em Computers and Structures}, 85:660--674, 2007.
  
 \bibitem{IPDPS10}
-J.~Luitjens and M.~Berzins.
-\newblock Improving the performance of {U}intah: {A} large-scale adaptive meshing computational framework.
-\newblock In {\em Proceedings of the 24th IEEE International Parallel and Distributed Processing Symposium (IPDPS10)}, 2010. 
+\textsc{J.~Luitjens and M.~Berzins}. {Improving the performance of {U}intah: {A} large-scale adaptive meshing computational framework}. In {\em Proceedings of the 24th IEEE International Parallel and Distributed Processing Symposium (IPDPS10)}, 2010. 
 
 \bibitem{Meng}
-Q. Meng, J. Luitjens, M. Berzins. 
-\newblock Dynamic Task Scheduling for the Uintah Framework, 
-\newblock In {\em Proceedings of the 3rd IEEE Workshop on Many-Task Computing on Grids and Supercomputers (MTAGS10)}, 2010.
+\textsc{Q. Meng, J. Luitjens, M. Berzins}. {Dynamic Task Scheduling for the Uintah Framework}. In {\em Proceedings of the 3rd IEEE Workshop on Many-Task Computing on Grids and Supercomputers (MTAGS10)}, 2010.
 
 \bibitem{csafe3}
-S.~G. Parker, J.~Guilkey, and T.~Harman.
-\newblock A component-based parallel infrastructure for the simulation of fluid-structure interaction.
-\newblock {\em Engineering with Computers}, 22:277--292, 2006.
-
+\textsc{S.~G. Parker, J.~Guilkey, and T.~Harman}. {A component-based parallel infrastructure for the simulation of fluid-structure interaction}. {\em Engineering with Computers}, 22:277--292, 2006.
 \end{thebibliography}

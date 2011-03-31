@@ -1,50 +1,39 @@
 \title{Using $hp$-FEM to model actuation of IPMC materials}
 \author{} \institute{}
-\tocauthor{\underline{David Pugal}, Pavel Solin, Kwang J. Kim, Alvo Aabloo}
+\tocauthor{\underline{D.~Pugal}, P.~Solin, K.~J.~Kim, A.~Aabloo}
+\maketitle
 
 \begin{center}
+{\large \underline{David Pugal}, Kwang J. Kim, Alvo Aabloo}\\
+Mechanical Engineering Department, University of Nevada\\
+Institute of Technology, Tartu University\\
+{\tt david.pugal@gmail.com, kwangkim@unr.edu, alvo.aabloo@ut.ee}\\
+\vspace{4mm}
 
-\textbf{\Large Using $hp$-FEM to model actuation of IPMC materials}\\
-\vspace{10mm}
-{\large \underline{David Pugal}, Kwang J. Kim}\\
-Mechanical Engineering Department, University of Nevada, Reno\\
-Institute of Technology, Tartu University, Estonia\\
-{\tt david.pugal@gmail.com, kwangkim@unr.edu}\\
-\vspace{4mm}
-{\large \underline{David Pugal}, Alvo Aabloo}\\
-Mechanical Engineering Department, University of Nevada, Reno\\
-Institute of Technology, Tartu University, Estonia\\
-{\tt david.pugal@gmail.com, alvo.aabloo@ut.ee}\\
-\vspace{4mm}
 {\large Pavel Solin}\\
-Department of Mathematics and Statistics, University of Nevada, Reno\\
-Institute of Thermomechanics, Prague, Czech Republic\\
+Department of Mathematics and Statistics, University of Nevada\\
+Institute of Thermomechanics, v.v.i., Academy of Sciences of the Czech Republic\\
 {\tt solin@unr.edu}
-
 \end{center}
 
 \section*{Abstract}
-
 The system of Poisson and Nernst-Planck (PNP) equations is used to describe the charge transport in ionic polymer-metal composite~\cite{shahinpoor2001} (IPMC) materials. Deformation of the material can be described by coupling the calculated charge density to the local body forces and solving Navier's equation. The charge density occurs in a very narrow region near the boundaries, characterized by the Debye length that is in the range of micrometer or less~\cite{bazant2004diffuse}. The required computing power for a full scale finite element (FE) model is, especially in 3D, rather significant.
   
 First, we briefly demonstrate how using the multi-meshing and time dependent adaptivity when solving the PNP system with Hermes~\cite{Hermes-project} result in the most optimal mesh in terms of computation time and problem size for each time step while maintaining a pre-set error of solution. Secondly, we show the multi-mesh and $hp$-adaptivity performance when calculating the actuation of IPMC --- that is a solution of the nonlinear system of four equations. Also, modeling IPMC actuation in 3D is discussed while preliminary results are demonstrated.
 
 \bibliographystyle{plain}
-
 \begin{thebibliography}{10}
-
 \bibitem{shahinpoor2001}
-M.~Shahinpoor and K.~J. Kim.
+\textsc{M.~Shahinpoor and K.~J. Kim.}
 \newblock Ionic polymer-metal composites: I. fundamentals.
 \newblock {\em Smart Materials \& Structures}, 10(4):819--833, 2001.
 
 \bibitem{bazant2004diffuse}
-M.Z. Bazant, K.~Thornton, and A.~Ajdari.
+\textsc{M.Z. Bazant, K.~Thornton, and A.~Ajdari.}
 \newblock {Diffuse-charge dynamics in electrochemical systems}.
 \newblock {\em Physical Review E}, 70(2):21506, 2004.
 
 \bibitem{Hermes-project}
-P.~Solin and et~al.
+\textsc{P.~Solin and et~al.}
 \newblock {\em Hermes - Higher-Order Modular Finite Element System (User's Guide)}.
-
 \end{thebibliography}

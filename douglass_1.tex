@@ -1,22 +1,16 @@
 \title{A Python Implementation of the Wilson-Fowler Spline for Open and Closed Curves}
 \author{} \institute{}
-\tocauthor{\underline{Rod W. Douglass}, Laura M. Lang}
+\tocauthor{\underline{R.~W.~Douglass}, L.~M.~Lang}
+\maketitle
 
 \begin{center}
-
-\textbf{\Large A Python Implementation of the Wilson-Fowler Spline for Open and Closed Curves}\\
-\vspace{10mm}
 {\large \underline{Rod W. Douglass}, Laura M. Lang}\\
-XCP-1, MS T085\\
-Los Alamos National Laboratory \\
-Los Alamos, NM 87545\\
+XCP-1, MS T085, Los Alamos National Laboratory\\
 {\tt rwd@lanl.gov, llang@lanl.gov}
-
 \end{center}
 
 \section*{Abstract\footnote{The title and abstract have been approved for unrestricted release as Los Alamos 
 National Laboratory report LA-UR 11-00577.}}
-
 We present a Python-class implementation of the Wilson-Fowler spline algorithm as outlined in \cite{Wilson66} and as modified by Melvin \cite{Melvin82}.  That is, consider a set of $N$ discrete points in two-dimensional space, $\{P_i = (x_i, y_i), i = 1,\ldots,N\}$ so that if $P_1 = P_{N}$, the resulting curve is closed.  Define a set of continuous cubic Hermitian curves, $\Omega_s(u,v)$,  for local (segment) coordinates $(u,v)$ defined on each of the $s = 1,\ldots,N-1$ segments spanning $P_s$ to $P_{s+1}$. The curve, $\Omega$, is a Wilson-Fowler spline if \cite{Melvin82}: for each $s = 1, \ldots, N-1$, $\Omega$, restricted to the segment from $P_s$ to $P_{s+1}$, is a member of $\Omega_s$, $\Omega$ has a continuous slope and curvature, and $\Omega$ has tangent vectors, $\vec{T}_1$ at $P_1$ and $\vec{T}_{N}$ at $P_{N}$, if $P$ forms an open curve.  For closed curves, the tangents are found by applying the algorithm to the first/last point, forming a "cyclic" non-linear algebraic system.  The non-linear algebra problem for the tangents at each node is solved using Newton's method with a line-search update (based on pg. 383, ff. \cite{Press92}).
 
 Once the spline is computed, methods were written to perform operations on the spline.  These include ray-spline intersection (based on \cite{Williams03}), insertion of $m$-points between original points, and point re-distribution methods.  Point insertion and re-distribution may use either equal arc-length, equal angles, or equal Euclidean length between points criteria.
@@ -25,10 +19,8 @@ Results demonstrate the efficacy and accuracy of the spline for a variety of tes
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
-
 \bibitem{Wilson66}
-{\sc A. H..~Fowler and C. W.~Wilson}. {Cubic spline, A curve fitting routine}. Report No. Y-1400 (Revision 1),
-Oak Ridge National Laboratory (1966).
+{\sc A. H..~Fowler and C. W.~Wilson}. {Cubic spline, A curve fitting routine}. Report No. Y-1400 (Revision 1), Oak Ridge National Laboratory (1966).
 
 \bibitem{Melvin82}
 {\sc W. R..~Melvin}. {Error analysis and uniqueness properties of the Wilson-Fowler spline}. Los Alamos National Laboratory Report LA-9178, (1982).
@@ -38,5 +30,4 @@ Oak Ridge National Laboratory (1966).
 
 \bibitem{Press92}
 {\sc W.H~Press, S.A.~Teukolsky, W.T.~Vettering, and B.P.~Flannery}. {Numerical Recipes in C: The Art of Scientific Computing}. Second Edition, Cambridge University Press, New York (1992).
-
 \end{thebibliography}

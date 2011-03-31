@@ -1,19 +1,15 @@
 \title{On Finite Element Application for Solution of Aeroelastic Instability of Airfoil with Consideration of Nonlinear Effects}
 \author{} \institute{}
-\tocauthor{P. Sv\'a\vcek}
+\tocauthor{P.~Sv\'a\v cek}
+\maketitle
 
 \begin{center}
-
-\textbf{\Large On Finite Element Application for Solution of Aeroelastic Instability of Airfoil with Consideration of Nonlinear Effects}\\
-\vspace{10mm}
 {\large P. Sv\' a\v cek}\\
-{$^\ast$ Czech Technical University, Faculty of Mechanichal Engineering, Dep. Technical Mathematics} Karlovo nam. 13, Praha 2, 121 35,\\
+{Department of Technical Mathematics, Faculty of Mechanichal Engineering, CTU in Prague}\\
 {\tt Petr.Svacek@fs.cvut.cz}
-
 \end{center}
 
 \section*{Abstract}
-
 This paper focuses on numerical approximation of a nonlinear problem of interactions of vicous incompressible flow over a flexibly supported airfoil with aileron.
 The time-dependent computational domain is taken into account by the Arbitrary Lagrangian-Eulerian method, cf.~\cite{Sva1}. The flow is governed by the incompressible Navier-Stokes equations written in the ALE form 
 \begin{equation}
@@ -22,7 +18,6 @@ The time-dependent computational domain is taken into account by the Arbitrary L
 \mbox{div}\, {\mathbf v} = 0, \qquad \mbox{ in } \Omega_t,
 \end{equation}
 where $\mathbf v$ is flow velocity, $p$ is the kinematic pressure and $\nu$ the kinematic viscosity. The computational domain $\Omega_t$ surrounds a flexibly supported airfoil with aileron section. The motion of the airfoil and aileron structure is described by the system of  ordinary differential equations for vertical displacement $h$, angle of rotation $\alpha$ and angle of rotation of the aileron $\beta$
-
 \begin{equation}
 \label{eq:ODE3}
 \left(
@@ -40,7 +35,6 @@ The numerical approximation of the presented mathematical model consists of appr
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
-
 \bibitem{Sva1}
 {\sc P.~Sv\'{a}\v{c}ek, M.~Feistauer, J.~Hor\'{a}\v{c}ek}.
 \newblock Numerical Simulation of Flow Induced Airfoil Vibrations with Large Amplitudes.
@@ -48,13 +42,12 @@ The numerical approximation of the presented mathematical model consists of appr
 
 \bibitem{Sva2}
 {\sc P.~Sv\'{a}\v{c}ek}. 
-On Energy Conservation for Finite Element Approximation of Flow - Induced Airfoil Vibrations.
+\newblock On Energy Conservation for Finite Element Approximation of Flow - Induced Airfoil Vibrations.
 \newblock Mathematics and Computers in Simulation 80(8) 2010, pp. 1713-1724.
 
 
 \bibitem{Ricci}
 {\sc S.~Ricci, A.~Scotti, J.~Cecrdle, J.~Malecek}.
-Active control of three-surface aeroelastic model.
+\newblock Active control of three-surface aeroelastic model.
 \newblock Journal of Aircraft 45(3) 2008, 1002-1013.
-
 \end{thebibliography}

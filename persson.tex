@@ -1,76 +1,36 @@
-
-%%%%% HEADING %%%%%
-
-\vspace{5ex}
+\title{High-Order Discontinuous Galerkin Simulation of Flapping Wings}
+\author{} \institute{}
+\tocauthor{P.-O. Persson}
+\maketitle
 
 \begin{center}
-%%%%% TITLE %%%%%
-\textbf{\large
-High-Order Discontinuous Galerkin Simulation of Flapping Wings
-}
-
-%%%%% AUTHORS %%%%%
-\textbf{
-Per-Olof Persson
-}
-
-%%%%% AFFILIATIONS %%%%%
-Per-Olof Persson \\
-Department of Mathematics, UC Berkeley \\
-970 Evans Hall \#3840, Berkeley, CA 94720 \\
-persson@berkeley.edu
-
+{\large Per-Olof Persson}\\
+Department of Mathematics, UC Berkeley\\
+{\tt persson@berkeley.edu}
 \end{center}
 
-The numerical simulation of flapping flight is a challenging
-problem, partly because of the large deformations of the computational
-domain, the transitional flows, and the complex geometries. We present
-our recent results with high-order accurate discontinuous Galerkin
-methods, which are capable of accurately solving complex flow problems
-on unstructured meshes [1]. We generate tetrahedral meshes using the
-DistMesh mesh generator and the Delaunay refinement method. The
-elements are curved to align with the boundaries using a nonlinear
-elasticity analogy [2].
+\section*{Abstract}
+The numerical simulation of flapping flight is a challenging problem, partly because of the large deformations of the computational domain, the transitional flows, and the complex geometries. We present our recent results with high-order accurate discontinuous Galerkin methods, which are capable of accurately solving complex flow problems on unstructured meshes \cite{1}. We generate tetrahedral meshes using the DistMesh mesh generator and the Delaunay refinement method. The elements are curved to align with the boundaries using a nonlinear elasticity analogy \cite{2}.
 
-The moving domain is modeled by a mapping-based high-order accurate
-Arbitrary Lagrangian-Eulerian formulation [3]. We explore various
-mappings, including explicitly prescribed expressions as well as
-numerical ones. The equations are discretized using the Compact DG
-method [4], and solved efficiently in parallel using Newton-Krylov
-solvers and optimized element ordering [5]. We study several flapping
-strategies and flow parameters, and determine in which regimes a
-high-fidelity approach is required and when faster simulation tools
-could be used [6].
+The moving domain is modeled by a mapping-based high-order accurate Arbitrary Lagrangian-Eulerian formulation \cite{3}. We explore various mappings, including explicitly prescribed expressions as well as numerical ones. The equations are discretized using the Compact DG method \cite{4}, and solved efficiently in parallel using Newton-Krylov solvers and optimized element ordering \cite{5}. We study several flapping strategies and flow parameters, and determine in which regimes a high-fidelity approach is required and when faster simulation tools could be used \cite{6}.
 
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{1}
+\textsc{A. Uranga, P.-O. Persson, M. Drela, and J. Peraire}. {Implicit Large Eddy Simulation of transition to turbulence at low Reynolds numbers using a Discontinuous Galerkin method}. Int. J. Num. Meth. Engrg.
 
-%%%%% REFERENCES %%%%%
-\textbf{References}
+\bibitem{2}
+\textsc{P.-O. Persson and J. Peraire}. {Curved Mesh Generation and Mesh Refinement using Lagrangian Solid Mechanics}. Aerospace Sciences Meeting and Exhibit, Orlando, Florida, 2009, AIAA-2009-949.
 
-[1] A. Uranga, P.-O. Persson, M. Drela, and J. Peraire, ``Implicit
-Large Eddy Simulation of transition to turbulence at low Reynolds
-numbers using a Discontinuous Galerkin method,'' \emph{Int. J. Num.
-  Meth. Engrg.}, to appear. \\ \vspace{-9mm}
+\bibitem{3}
+\textsc{Persson, P.-O., Bonet, J., and Peraire, J.}. {Discontinuous Galerkin Solution of the Navier-Stokes Equations on Deformable Domains}. Comput. Methods Appl. Mech. Engrg., Vol. 198, No. 17--20, 2009, pp. 1585--1595.
 
-[2] Persson, P.-O. and Peraire, J., ``Curved Mesh Generation and Mesh
-Refinement using Lagrangian Solid Mechanics,'' \emph{47th AIAA
-  Aerospace Sciences Meeting and Exhibit}, Orlando, Florida, 2009,
-AIAA-2009-949. \\ \vspace{-9mm}
+\bibitem{4}
+\textsc{Peraire, J. and Persson, P.-O.}. {The compact discontinuous Galerkin (CDG) method for elliptic problems}. SIAM J. Sci. Comput., Vol. 30, No. 4, 2008, pp. 1806--1824.
 
-[3] Persson, P.-O., Bonet, J., and Peraire, J., ``Discontinuous
-Galerkin Solution of the Navier-Stokes Equations on Deformable
-Domains,'' \emph{Comput. Methods Appl. Mech. Engrg.}, Vol. 198, No.
-17--20, 2009, pp. 1585--1595. \\ \vspace{-9mm}
+\bibitem{5}
+\textsc{P.-O. Persson}. {calable Parallel Newton-Krylov Solvers for Discontinuous Galerkin Discretizations}. 47th AIAA Aerospace Sciences Meeting and Exhibit, Orlando, Florida, 2009, AIAA-2009-606.
 
-[4] Peraire, J. and Persson, P.-O., ``The compact discontinuous
-Galerkin (CDG) method for elliptic problems,'' \emph{SIAM J. Sci.
-  Comput.}, Vol. 30, No. 4, 2008, pp. 1806--1824. \\ \vspace{-9mm}
-
-[5] Persson, P.-O., ``Scalable Parallel Newton-Krylov Solvers for
-Discontinuous Galerkin Discretizations,'' \emph{47th AIAA Aerospace
-  Sciences Meeting and Exhibit}, Orlando, Florida, 2009,
-AIAA-2009-606. \\ \vspace{-9mm}
-
-[6] Persson, P.-O., Willis, D. J., and Peraire, J., ``The Numerical
-Simulation of Flapping Wings at Low Reynolds Numbers,'' \emph{48th
-  AIAA Aerospace Sciences Meeting and Exhibit}, Orlando, Florida,
-January 2010, AIAA-2010-724.
+\bibitem{5}
+\textsc{Persson, P.-O., Willis, D. J., and Peraire, J.}. {The Numerical Simulation of Flapping Wings at Low Reynolds Numbers}. 48th AIAA Aerospace Sciences Meeting and Exhibit, Orlando, Florida, January 2010, AIAA-2010-724.
+\end{thebibliography}

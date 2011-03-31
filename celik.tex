@@ -1,27 +1,21 @@
 \title{A Rebar P-version Finite Element for Three-dimensional Reinforced Concrete Structures}
-\author{Nilay Celik} \institute{Istanbul Technical University, Faculty of Civil Engineering}
+\author{} \institute{}
+\tocauthor{N.~Celik}
+\maketitle
 
 \begin{center}
-
-\textbf{\Large A Rebar P-version Finite Element for Three-dimensional Reinforced Concrete Structures}\\
-\vspace{10mm}
 {\large  Nilay Celik}\\
-Istanbul Technical University, Faculty of Civil Engineering, 34469 Istanbul, Turkey\\
+Faculty of Civil Engineering, Istanbul Technical University\\
 {\tt celikni@itu.edu.tr}
-
 \end{center}
 
 \section*{Abstract}
-
 Nowadays, majority of structures around the world are built of reinforced concrete. This trend in construction engineering led to intense investigation on its behavior, both experimentally and analytically. As a result of the advances in computing technology, the behavior of reinforced concrete can be numerically examined in an effective way by Finite Element Analysis. During the initial steps of the advances in reinforced concrete technology, mathematical models for two-dimensional structures were widely used. Within these models, reinforcement was modeled as passing through the concrete element nodes. As the rebar technology is introduced, the elements representing the reinforcement are started to be thought as a layer to share the same nodes with the overlaying concrete elements without introducing additional degrees of freedom. As a result, meshing the structure becomes independent of the reinforcement positioning. This new approach has initially been applied to two-dimensional structures. It is then expanded for three-dimensional structures, which is more realistic and accurate. This work is based on a previous study on developing a finite rebar element for three-dimensional reinforced concrete frames \cite{Celik04}.
 
 In order to minimize the discretization error, either mesh refinement, called h-version, or increasing the polynomial degree of the shape functions, called p-version, are used. Here, the three-dimensional p-version hexahedral element of C. Becker et al. \cite{Becker09} is mostly utilized. As the governing material models, coupled elasto-plastic damage model of G. Meschke et al. \cite{Meschke98} and hardening plasticity model of J.C. Simo \& T.J.R. Hughes \cite{Simo98} are taken for concrete and reinforcement, respectively. Moreover, the developed rebar element is tested on an experimental structure \cite{Tsuchiya02}.
 
-
-
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
-
 \bibitem{Celik04}
 {\sc N.~Celik}. {Development of a finite rebar-element for numerical analyses of reinforced concrete structures by means of hierarchical p-elements}. Master's Thesis, Ruhr-University Bochum (2004)
 
@@ -36,5 +30,4 @@ In order to minimize the discretization error, either mesh refinement, called h-
 
 \bibitem{Tsuchiya02}
 {\sc S.~Tsuchiya, T.~Mishima and K.~Maekawa}. {Shear failure and numerical performance evaluation of RC beam members with high-strength materials}. J. Mater. Conc. Struct. Pavements, JSCE, 54(697) 65-84. (2002)
- 
-\end{thebibliography}
+ \end{thebibliography}

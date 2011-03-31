@@ -1,30 +1,24 @@
 \title{Finite Volume/Element Equivalence for the Euler Equations in the Cylindrical and Spherical References}
 \author{} \institute{}
-\tocauthor{Dante De Santis, Gianluca Geraci, \underline{Alberto Guardone}}
+\tocauthor{D.~Santis, G.~Geraci, \underline{A.~Guardone}}
+\maketitle
 
 \begin{center}
-
-\textbf{\Large Finite Volume/Element Equivalence for the Euler Equations in the Cylindrical and Spherical References}\\
-\vspace{10mm}
 {\large Dante De Santis, Gianluca Geraci}\\
-INRIA Bordeaux--Sud-Ouest, \`equipe-projet Bacchus\\
-Cours de la Lib\'eration, 33405 Talence, France\\
+INRIA Bordeaux--Sud-Ouest, \`Equipe-projet Bacchus, Cours de la Lib\'eration\\
 {\tt dante.de\_santis@inria.fr, gianluca.geraci@inria.fr}\\
 \vspace{4mm}
-{\large \underline{Alberto Guardone}}\\
-Politecnico di Milano, Dipartimento di Ingegneria Aerospaziale\\
-Via La Masa 34, 20156 Milano, Italy\\
-{\tt alberto.guardone@polimi.it}
 
+{\large \underline{Alberto Guardone}}\\
+Dipartimento di Ingegneria Aerospaziale, Politecnico di Milano\\
+{\tt alberto.guardone@polimi.it}
 \end{center}
 
 \section*{Abstract}
-
 A unified description of finite volume and finite element discretizations is proposed for the solution of the compressible Euler equations over unstructured grids in cylindrical and spherical coordinates. The method moves from suitable equivalence conditions linking finite element integrals  to the corresponding finite volume metrics, such as the cell volume or the integrated normals. The equivalence conditions were derived here without introducing any approximation and allow to determine all needed finite volume metric quantities from finite element ones \cite{selmin,ddga}. Numerical simulations are presented for the explosion problem in two spatial dimensions in cylindrical and spherical coordinates, and the numerical results are compared with the one-dimensional simulation for cylindrically and spherically symmetric explosions, in which an initial discontinuity in pressure results in the formation of a diverging shock \cite{sedov}. The computed pressure and density profile agree fairly well with one-dimensional simulation in cylindrical and spherical symmetry over a very fine grid. For the implosion problem, numerical simulations include also the effect of the presence of cylindrical obstacles in the flow field, which have been recently proposed as a mean to modify the shape of a cylindrical converging shock to increase the shock front stability in experimental studies on the sonoluminescence effect. Spherical shock waves are also considered and the modification to the shock geometry due to the presence of a spherical obstacle is evaluated numerically and compared to its cylindrical counterpart \cite{chenal}.
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
-
 \bibitem{selmin}
 {\sc V.~Selmin}. {The node-centred finite volume approach: bridge between finite differences and finite elements}. Comp. Meth. Appl. Mech. Engng., 102 (1993), pp.~107--138.
 
@@ -36,5 +30,4 @@ A unified description of finite volume and finite element discretizations is pro
 	
 \bibitem{chenal}
 {\sc H.~B.~Chen, L.~Zhang, and E.~Panarella}. {Stability of imploding spherical shock waves}. Journal of Fusion Energy, 14 (1995), pp.~389--392
-
 \end{thebibliography}
