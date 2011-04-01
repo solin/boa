@@ -1,0 +1,47 @@
+\title{Finite Element Network Analysis of Random Particle Composites}
+\author{} \institute{}
+\tocauthor{D.~Peterseim}
+\maketitle
+
+\begin{center}
+{\large Daniel Peterseim}\\
+Humboldt-Universit\"at zu Berlin\\
+{\tt peterseim@math.hu-berlin.de}\\
+\end{center}
+
+\section*{Abstract}
+The numerical simulation of partial differential equations is particularly challenging if the underlying data is complicated, e.g., if non-uniform, heterogeneous or oscillating diffusion coefficients are considered. 
+
+In this respect, a new finite element method \cite{PeCa10}
+is presented which computes conductivity in some unstructured particle-reinforced composite material and thereby covers applications in thermodynamics, mechanics, or electromagnetism. The $2$-phase material under consideration is composed of a poorly conducting matrix material filled by highly conducting circular inclusions which are randomly dispersed. The mathematical model is a Poisson-type problem with discontinuous coefficients. The discontinuities are huge in contrast and quantity.
+
+The proposed method generalizes classical continuous piecewise affine finite elements to special computational meshes which encode the particles in a network structure \cite{DP09,P10}.
+This approach preserves important quantities like volume and surface fractions exactly and mimics macroscopic phenomena such as a maximum principle and percolation phenomena. The discretization error is proportional to the particle distance and does not depend on the conductivity contrast in the medium.
+
+This research aims at a better understanding of how macroscopic material properties depend on the microscopic geometry. A precise knowledge of such dependencies is of enormous importance since shape parameters of the filler particles are often at manufacturer's disposal and can be adjusted within material optimization.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{PS11}
+\textsc{D.~Peterseim and S.~Sauter}.
+\newblock Error Estimates for Finite Element Discretizations of Elliptic Problems with Oscillatory Coefficients.
+\newblock {\em DFG Research Center Matheon Berlin, Preprint Series}, 756, 2011.
+\newblock (submitted for publication)
+
+\bibitem{PeCa10}
+\textsc{D.~Peterseim and C.~Carstensen}.
+\newblock Finite Element Network Approximation of Conductivity in Particle Composites.
+\newblock 2010.
+\newblock (submitted for publication)
+
+\bibitem{DP09}
+\textsc{D.~Peterseim}.
+\newblock Generalized {D}elaunay Partitions and Composite Material Modeling.
+\newblock {\em DFG Research Center Matheon Berlin, Preprint Series}, 690, 2010.
+\newblock (submitted for publication)
+
+\bibitem{P10}
+\textsc{D.~Peterseim}.
+\newblock Triangulating a System of Disks.
+\newblock In {\em Proceedings of the EuroCG 2010, Dortmund, Germany}, 2010.
+\end{thebibliography}

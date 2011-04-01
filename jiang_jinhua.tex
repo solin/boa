@@ -1,0 +1,34 @@
+\title{Application Of Variational Data Assimilation To Dynamical Downscaling Of Regional Wind Energy Resources In The Western U.S.}
+\author{} \institute{}
+\tocauthor{\underline{J.~Jiang}, D.~Koracin, R.~Vellore, K.~Horvath, R.~Belu}
+\maketitle
+
+\begin{center}
+{\large \underline{Jinhua Jiang}, Darko Koracin, Ramesh Vellore}\\
+Desert Research Institute, Reno\\
+{\tt jinhua.jiang@dri.edu}\\
+\vspace{4mm}
+
+{\large Kristian Horvath}\\
+Meteorological and Hydrological Service, Zagreb\\
+{\tt Kristian.Horvath@dri.edu}
+\vspace{4mm}
+
+{\large Radian Belu}\\
+Drexel University\\
+{\tt Radian.Belu@dri.edu}
+\end{center}
+
+\section*{Abstract}
+Data assimilation (DA) has been widely used in mesoscale meteorological modeling. This technique merges observational data into gridded data (the first-guess fields from forecasts) to provide dynamically consistent four-dimensional datasets. For wind power forecasting, due to the non-linear relationship between wind power and wind speed, small over/under-estimations in the wind speed predictions will substantially alter the wind power assessment. In the western U.S., local topography and land-use have important effects on both wind speed and wind direction. In order to describe orographical flows or diurnal circulations, a fine spatial and temporal resolution is necessary for simulating the local/regional-scale wind characteristics, as well as for better assessments of regional wind energy resources over complex terrain. 
+
+In this study, three-dimensional variational data assimilation is applied to short-term wind and wind power predictions with the Weather Research and Forecasting (WRF) model and WRFVar , its data assimilation module (Paegle et al. 1997, Barker et al. 2003),. The observational data used for DA include radiosonde data and RAWS (Remote Automated Weather Station) data covering California, Nevada, Arizona, Idaho, and Oregon. The WRF model is configured with a parent domain and seven nested domains. The horizontal resolution of the parent domain is 27 km. For the first three nested domains the horizontal resolutions are 9, 3 and 1 km, respectively, and for the four innermost domains are 333 m. The seven nested domains are initialized with the output from data assimilation for the parent domain. The preliminary numerical experiments showed that variationally assimilated datasets on the coarser domain (27 km grid) improved the forecasts in the nested domains compared to without WRFVar. The study further addresses the impact of increased horizontal resolution on the forecast skill over complex terrain. In addition, the effects of terrain and boundary conditions on the forecast skill are discussed.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{Bark04}
+{\sc Barker, D. M., W. Huang, Y.-R. Guo, et al.}. {A three-dimensional variational data assimilation system for MM5: Implementation and initial results}.Monthly Weather Review. 132 (2004), pp.~897--914.
+
+\bibitem{Paegle97}
+{\sc Paegle, J., Q. Yang, and M. Wang}. {Predictability in limited area and global models}. Meteor. Atmos. Phys., 63 (1997), pp.~53--69.
+\end{thebibliography}

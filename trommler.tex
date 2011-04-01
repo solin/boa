@@ -1,0 +1,37 @@
+\title{A Finite-Element Thin-Sheet Approach in Magneto-Quasistatics}
+\author{} \institute{}
+\tocauthor{\underline{J.~Trommler}, S.~Koch, T.~Weiland}
+\maketitle
+
+\begin{center}
+{\large \underline{Jens Trommler}, Stephan Koch, Thomas Weiland}\\
+TU Darmstadt, Institut f\"ur Theorie Elektromagnetischer Felder (TEMF),\\
+{\tt trommler@temf.tu-darmstadt.de, koch@temf.tu-darmstadt.de, thomas.weiland@temf.tu-darmstadt.de}
+\end{center}
+
+\section*{Abstract}
+Modeling thin sheets in combination with volume discretization methods, e.g., the finite element method (FEM) is often cumbersome. Resolving thin sheets in the volumetric mesh leads to large numerical models and, in turn, to a high computational effort.
+To avoid meshing such thin structures, the central idea is to replace it by a surface defined at its midline. Several formulations of that type are known. In \cite{nakata}, the field value across the thin sheet (in thickness direction) is chosen to be constant and so called special elements are used. Ill-conditioned matrices are mostly overcome but the accuracy can be poor. In order to allow also linear or higher order variation across the sheet, such special elements are extended by using a double layer model for the sheet and then choose prismatic elements in combination with special basis functions \cite{ren,gyselinck} or, alternatively, define impedance boundary conditions (IBCs) \cite{krahenbuhl,mayergoyz}. These  methods are more accurate but can still lead to ill-conditioned system matrices related to the FE discretization.\\
+In this work a different FEM-approach is applied to magneto-quasistatic problems in the magnetic vector potential (MVP) formulation. Constant sheet elements are used for the tangential variation of the MVP. The information about the discontinuity in normal direction is incorporated into the basis functions of the volume elements that are connected to the sheet elements. The determination of the normal variation can be reduced to a 1D problem which can be solved analytically. For this purpose, the normal derivative of the MVP at the sheet interface together with the appropriate interface condition is used. No double layers or global asymptotic expansions \cite{schmidt} are needed. The advantages with respect to the condition number of the system matrix are shown for different test scenarios.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{nakata}
+{\sc T.~Nakata, N.~Takahashi, K.~Fujiwara and Y.~Shiraki}. {3D magnetic field analysis using special elements}. IEEE Trans. Magn. 26   (1990), pp.~2379--2381.
+
+\bibitem{ren}
+{\sc Z.~Ren}. {Degenerated Whitney Prism Elements - General Nodal and Edge Shell Elements
+For Field Computation in Thin Structures}. IEEE Trans. Magn. 34 (1998), pp.~2547--2550.
+
+\bibitem{gyselinck}
+{\sc J.~Gyselinck, R.V.~Sabariego, P.~Dular and C.~Geuzaine}. {Time-Domain Finite-Element Modeling of Thin Electromagnetic Shells}. IEEE Trans. Magn. 44 (2008), pp.~742--745.
+
+\bibitem{krahenbuhl}
+{\sc L.~Kr\"ahenb\"uhl and D.~Muller}. {Thin layers in electrical engineering-example of shell models in analysing eddy-currents by boundary and finite element methods}. IEEE Trans. Magn. 29 (1993), pp.~1450--1455.
+
+\bibitem{mayergoyz}
+{\sc I.D.~Mayergoyz and G.~Bedrosian}. {On calculation of 3-D eddy currents in conducting and magnetic shells}. IEEE Trans. Magn. 31  (1995 ), pp.~1319--1324.
+
+\bibitem{schmidt}
+{\sc K.~Schmidt}. {High-order numerical modelling of highly conductive thin sheets}. PhD thesis, ETH Z\"urich, July 2008.
+\end{thebibliography}

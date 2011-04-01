@@ -1,0 +1,32 @@
+\title{High Order Curvilinear Finite Elements for Lagrangian Hydrodynamics}
+\author{} \institute{}
+\tocauthor{\underline{V.~A.~Dobrev}, T.~V.~Kolev, R.~N.~Rieben}
+\maketitle
+
+\begin{center}
+{\large \underline{Veselin A. Dobrev}, Tzanio V. Kolev}\\
+Center for Applied Scientific Computing, Lawrence Livermore National Laboratory\\
+{\tt dobrev1@llnl.gov, kolev1@llnl.gov}\\
+\vspace{4mm}
+
+{\large Robert N. Rieben}\\
+Weapons and Complex Integration, B-Division, Lawrence Livermore National Laboratory\\
+{\tt rieben1@llnl.gov}
+\end{center}
+
+\section*{Abstract}
+The discretization of the Euler equations of gas dynamics in a moving Lagrangian frame is at the heart of many multi-physics simulation algorithms. In this talk,
+we present a general framework for high-order Lagrangian discretizations of the compressible shock hydrodynamics equations using curvilinear finite elements in
+2D, 3D and axisymmetric geometries. This method is an extension of the approach outlined in \cite{DobrevEllisKolevRieben10}.
+
+Our method is derived through a variational formulation of the momentum and energy conservation equations using high-order continuous finite elements for the velocity and position, and a high-order discontinuous basis for the internal energy field. The use of high-order position description enables curvilinear zone geometries allowing for better approximation of the mesh curvature which develops naturally with the flow. The semi-discrete equations involve velocity and energy ``mass matrices'' which are constant in time due to our notion of {\em strong mass conservation}. We also introduce the concept of {\em generalized corner force matrices}, which together with the strong mass conservation principle, imply the {\em exact total energy conservation on a semi-discrete level}, an important feature of our method which holds in very general settings. The fully-discrete equations are obtained by the application of a Runge Kutta-like energy conserving time stepping scheme.
+
+We review the implementation of these ideas in our research code BLAST \cite{BLAST}, and present a number of 2D, 3D and axisymmetric computational results demonstrating the benefits of the high-order approach for Lagrangian computations, including improved robustness and symmetry preservation, significant reduction in mesh imprinting, and high-order convergence for smooth problems.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{DobrevEllisKolevRieben10}
+{\sc V.A.~{Dobrev}, T.E.~{Ellis}, Tz.V.~{Kolev} and R.N.~{Rieben}}. {Curvilinear Finite Elements for {Lagrangian} Hydrodynamics}. Int. J. Numer. Meth. Phys. doi: 10.1002/fld.2366 (2010).
+
+\bibitem{BLAST} {BLAST -- a high-order object-oriented Lagrangian hydrocode}. {\tt http://www.llnl.gov/CASC/blast}
+\end{thebibliography}

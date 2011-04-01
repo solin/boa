@@ -1,0 +1,27 @@
+\title{Numerical Simulations of Concrete Mechanical Tests}
+\author{} \institute{}
+\tocauthor{\underline{J.~Vorel}, V.~\v{S}milauer, Z.~Bittnar}
+\maketitle
+
+\begin{center}
+{\large \underline{Jan Vorel}, V\'{i}t \v{S}milauer, Zden\v{e}k Bittnar}\\
+Faculty of Civil Engineering, CTU in Prague\\
+{\tt jan.vorel@fsv.cvut.cz, smilauer@cml.fsv.cvut.cz, bittnar@fsv.cvut.cz}
+\end{center}
+
+\section*{Abstract}
+In a civil engineering, computational modeling is widely used in the design process at the structural level. In contrast to that, an automated support for the selection or design of construction materials is currently not available. Specification of material properties and model parameters has a strong influence on the accuracy of the results.
+
+Therefore, a study for a numerical concrete tests at the mesostructural level is presented. A completely random granular skeleton is created by means of "take and place" method~\cite{Shutter:1993:RPC}. The particle generation is based on the grain-size distribution function, volume fraction and shape factor. The aggregates are considered as a ellipsoids or polytopes with a smallest dimension given by the sieve curve. Starting from the largest one, aggregates are sequentially placed into the sample.
+
+The simplified 2D and general 3D models are used for the modeling of the compression cube test. The parametric study is presented to determine the suitable level of simplification when the numerical model is prepared. Our attention is focused on the estimation of the sufficient number (volume, size) of grains which have to be involved during the finite element (FE) simulations. The influence of grains excluded from the FE analysis are introduced into the cement paste with the help of the mean field approaches, i.e. the Mori-Tanaka~\cite{Vorel:2009:EHTC} or self-consistent methods. The numerical results are then compared with experimentally obtained data.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{Shutter:1993:RPC}
+{\sc G.~DE~SCHUTTER and L.~TAERWE}. {Random particle model for concrete based on Delaunay
+triangulation}. Materials and Structures 26 (1993), pp.~67--73.
+
+\bibitem{Vorel:2009:EHTC}
+{\sc J.~Vorel and M.~\v{S}ejnoha}. {Evaluation of homogenized thermal conductivities of imperfect carbon-carbon textile composites using the Mori-Tanaka method}. Structural Engineering and Mechanics 33 (2009), pp.~429--446.
+\end{thebibliography}

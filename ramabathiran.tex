@@ -1,0 +1,25 @@
+\title{Conserving Integrators for Wave Propagation in Hyperelastic Layers}
+\author{} \institute{}
+\tocauthor{\underline{A.~A.~Ramabathiran}, S.~Gopalakrishnan}
+\maketitle
+
+\begin{center}
+{\large \underline{Amuthan Arunkumar Ramabathiran}, S.~Gopalakrishnan}\\
+Department of Aerospace Engineering, Indian Institute of Science\\
+{\tt aparyap@gmail.com, krishnan@aero.iisc.ernet.in}
+\end{center}
+
+\section*{Abstract}
+A class of higher order numerical integrators that conserve discrete energy, momentum and angular momentum are employed for the study of wave propagation in a Hyperelastic layer of uniform thickness. The Murnaghan potential is used to model the material nonlinearity and full geometric nonlinearity is considered. A numerical procedure using techniques of automatic differentiation is developed within a Hamiltonian framework to directly formulate the Finite Element Matrices without recourse to an explicit derivation of the governing equations. The advantage of this formulation is illustrated using higher order waveguide models. Solutions obtained using a standard nonlinear Finite Element formulation with Newmark time stepping are also illustrated for comparison.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{GrossBetschSteinmann}
+{\sc M.~Gross, P.~Betsch and P.~Steinmann}. {Conservation properties of a time FE method. Part IV: Higher order energy and momentum conserving schemes}. Int. J. Numer. Meth. Engng 63 (2005), pp.~1849--1897.
+
+\bibitem{AutoDiff}
+{\sc Michael~Bartholomew-Biggs, Steven~Brown, Bruce~Christianson and Laurence Dixon}. {Automatic differentiation of algorithms}. J. Computational and Applied Mathematics 124 (2000), pp.~171--190.
+
+\bibitem{deLimaHamilton}
+{\sc W.J.N.~de~Lima and M.F.~Hamilton}. {Finite-amplitude waves in isotropic elastic plates}. J. Sound and Vibration 265 (2003), pp.~819--839.
+\end{thebibliography}

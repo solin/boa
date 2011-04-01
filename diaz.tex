@@ -1,0 +1,32 @@
+\title{Adaptive Solar Radiation Numerical Model}
+\author{} \institute{}
+\tocauthor{\underline{F.~D\' iaz}, G.~Montero, J.~M.~Escobar, R.~Montenegro}
+\maketitle
+
+\begin{center}
+{\large \underline{Felipe D\' iaz}}\\
+Electrical Engineering Department, University of Las Palmas de Gran Canaria\\
+{\tt fdiaz@die.ulpgc.es}\\
+\vspace{4mm}
+
+{\large Gustavo Montero, Jos Mara Escobar, Rafael Montenegro}\\
+University Institute for Intelligent Systems and Numerical Applications in Engineering\\
+University of Las Palmas de Gran Canaria\\
+{\tt gustavo@dma.ulpgc.es, jescobar@dsc.ulpgc.es, erodriguez@dis.ulpgc.es, rafa@dma.ulpgc.es}
+\end{center}
+
+\section*{Abstract}
+A solar radiation numerical model is presented. With it, the user can estimate the radiation values in any location easily and compute the solar power generation taking into account not only the radiation level, but also the terrain surface conditions considering the cast shadows.
+
+The terrain surface is made using 2-D adaptive meshes of triangles~\cite{Montero}, which are constructed using a refinement/derefinement procedure in accordance with the variations of the terrain surface and albedo. The model can be used in atmospheric sciences as well as in electrical engineering since it allows the user to find the optimal location for the maximum power generation in photovoltaic or solar thermal power exploitaitions. For this purpose, the effect of shadows is considered in each time step. Solar radiation is first computed for clear-sky (CS) conditions~\cite{Suri} and then, real-sky values are computed daily in terms of the CS index. Maps for CS index are obtained from a spatial interpolation of observational data which are available for each day at several points of the studied zone. Finally, the solar radiation maps of a month are calculated from the daily results.
+
+The model can be also applied in solar radiation forecasting using a meteorological model. The estimation of daily solar radiation provided by such model is used to adjust the clear sky results and obtain the real sky radiation.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{Montero}
+{\sc G.~Montero, J.M.~Escobar, E.~Rodr\'{\i}guez and R.~Montenegro}. {Solar radiation and shadow modelling with adaptive triangular meshes}. Solar Energy 83 (7) (2009), pp.~998--1012.
+
+\bibitem{Suri} 
+{\sc M.~\v{S}\'uri and J.~Hofierka}. {A New GIS-based Solar Radiation Model and its application to photovoltaic assessments}. Transactions in GIS 8 (2) (2004), pp.~175--170.
+\end{thebibliography}

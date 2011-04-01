@@ -1,0 +1,52 @@
+\title{Convergence of the mixed finite element method for Maxwell's equations with non-linear conductivity}
+\author{} \institute{}
+\tocauthor{\underline{S.~Durand}, M.~Slodi\v{c}ka}
+\maketitle
+
+\begin{center}
+{\large \underline{Stephane Durand}, Mari\'{a}n Slodi\v{c}ka}\\
+Department of Mathematical Analysis, Ghent University\\
+{\tt sdurand@cage.ugent.be, marian.slodicka@ugent.be}
+\end{center}
+
+\section*{Abstract}
+Let $\Omega$ be a bounded polyhedral domain in $\mathbb{R}^3$ with a Lipschitz continuous boundary $\partial \Omega$ and outward unit normal vector $\mathbf n$. We consider the following Maxwell's system,
+
+\begin{equation}
+\label{eq:system}
+\left\{
+\begin{array}{rllll}\displaystyle
+\mu \partial_t \mathbf H + \nabla \times \mathbf H &=\mathbf 0,   &\mbox{ in } (0,T) \times \Omega,\\
+\epsilon \partial_t \mathbf E + \mathbf J(\mathbf E) - \nabla \times \mathbf H &= \mathbf F, & \mbox{ in } (0,T) \times \Omega,\\
+\mathbf n \times \mathbf E &= \mathbf 0,      &\mbox{ in } (0,T) \times \partial \Omega,\\
+\mathbf E(0) &= \mathbf E_0,   &\mbox{ in } \Omega,\\
+\mathbf H(0) &= \mathbf H_0,  &\mbox{ in } \Omega,
+\end{array}
+\right.
+\end{equation}
+
+where $\mathbf E$ and $\mathbf H$ denote the electric and magnetic field and $\mathbf J(\mathbf E)$ is a general non-linear constitutive law describing the conductivity of the medium. The other parameters $\mu$ and $\epsilon$ denote the permeability and permittivity of the material. This system of equations models the electromagnetic behaviour of type-II superconductors \cite{Slodicka.2008}, where $\mathbf J(\mathbf E) = |\mathbf E|^{\alpha-1} \mathbf E$, $\alpha >0$.
+
+We present sufficient conditions on the function $\mathbf J(\mathbf E)$, such that the system \eqref{eq:system} has a unique weak solution. Our approach is based on Rothe's method, which starts with the analysis of a time-discretized approximation scheme and we prove convergence as the timestep goes to zero. We also derive the corresponding error estimates. As a next step, we develop a fully discretized approximation scheme for \eqref{eq:system} based on mixed finite elements. The approximation of $\mathbf E$ is based on curl-conforming edge elements, whereas $\mathbf H$ is approximated be $L^2$-conforming elements. We prove that this discretization scheme is stable with sub-optimal convergence rate.
+
+The previous analysis allows us to study the singular limit $\epsilon \to 0$. Based on the techniques from \cite{Yin1999} we are able to prove that the solution of \eqref{eq:system} solves the quasi-static problem as $\epsilon \to 0$. 
+
+Finally, we support the theory by some numerical examples programmed in the software package GetDP \cite{Dular1998}.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{Dular1998}
+\textsc{P.~Dular, C.~Geuzaine, F.~Henrotte, and N.~Legros}.
+\newblock A general environment for the treatment of discrete problems and its application to the finite element method.
+\newblock {\em IEEE Transactions On Magnetics}, 34(5):3395--3398, September 1998.
+
+\bibitem{Slodicka.2008}
+\textsc{M.~Slodi\v{c}ka}.
+\newblock Nonlinear diffusion in type-II superconductors.
+\newblock {\em J. Comput. Appl. Math.}, 215(2):568--576, 2008.
+
+\bibitem{Yin1999}
+\textsc{H.~M. Yin}.
+\newblock On a singular limit problem for nonlinear {M}axwell's equations.
+\newblock {\em Journal Of Differential Equations}, 156(2):355--375, August 1999.
+\end{thebibliography}

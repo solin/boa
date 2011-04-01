@@ -1,0 +1,36 @@
+\title{Implicit Discontinuous Galerkin Methods for Parabolic Problems}
+\author{} \institute{}
+\tocauthor{\underline{J.~J.~Heys}, G.~D.~Vo, G.~Hansen}
+\maketitle
+
+\begin{center}
+{\large \underline{Jeffrey J. Heys}}\\
+Chemical and Biological Engineering, Montana State University\\
+{\tt jeff.heys@gmail.com}\\
+\vspace{4mm}
+
+{\large Garret D. Vo}\\
+Mechanical Engineering, Montana State University\\
+{\tt garretvo19@gmail.com}\\
+\vspace{4mm}
+
+{\large Glen Hansen}\\
+Multiphysics Methods Group, Idaho National Laboratory\\
+{\tt Glen.Hansen@inl.gov}
+\end{center}
+
+\section*{Abstract}
+Discontinuous Galerkin (DG) methods have the potential to combine the stable upwinding of finite volume methods with the accuracy and efficiency of high-order finite element methods.  Much of the development of DG algorithms has focus on explicit time stepping and hyperbolic equations~\cite{HesWar2010}.  In multiphysics applications, however, it is important to have the time step size flexibility allowed by implicit time stepping, and, in many cases, the equations of interest are parabolic equations, such as the advection-diffusion equation or transitional Navier-Stokes equations.  This talk will describe the derivation and implementation of implicit DG methods for parabolic problems with a focus on comparing these DG methods to traditional implicit Galerkin finite element methods in terms of both accuracy and computational cost.  The test problems for the comparison include the heat equation, advection-diffusion equation, viscous Burger's equation, and the Navier-Stokes equations.  Appealingly, the approximation spaces for velocity and pressure can be chosen almost arbitrarily with DG methods when solving the Stokes or Navier-Stokes system~\cite{CocKanSch2002}.  In order to provide a common platform for the comparison and because future development will focus on parallel implementation, the Trilinos library is used throughout the development of the implicit DG algorithms.  Previous work has shown that SA multigrid algorithms, like those available in Trilinos, can potentially give optimal scalability for DG operators~\cite{OlsSch2010}.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{HesWar2010}
+{\sc J.S.~Hesthaven and T. Warburton}. {Nodal discontinuous Galerkin methods:  algorithms, analysis, and applications}. Vol.~54 in Texts in Applied Mathematics, Springer, New York, 2010.
+
+\bibitem{CocKanSch2002}
+{\sc R.~Cockburn, G. Kanschat, D. Schotzau, and C. Schwab}. {Local discontinuous Galerkin methods for the stokes system}. SIAM J.~Numer.~Anal. 40 (2002), pp.~319--343.
+
+\bibitem{OlsSch2010}
+{\sc L.N.~Olson and J.B. Schroder}. {Smoothed aggregation for Helmholtz problems}. Numer.~Lin.~Alg.~Appl. 
+17 (2010), pp. 361-386. 
+\end{thebibliography}

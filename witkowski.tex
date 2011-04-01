@@ -1,0 +1,22 @@
+\title{AMDiS - A user friendly parallel adaptive finite element toolbox}
+\author{} \institute{}
+\tocauthor{A.~Voigt, \underline{T.~Witkowski}}
+\maketitle
+
+\begin{center}
+{\large Axel Voigt, \underline{Thomas Witkowski}}\\
+Department of Mathematics, TU Dresden\\
+{\tt axel.voigt@tu-dresden.de, thomas.witkowski@tu-dresden.de}
+\end{center}
+
+\section*{Abstract}
+The numerical solution of PDEs on parallel computers is usually a very demanding task. We present a user friendly adaptive finite element toolbox which is suitable for solving a broad class of nonlinear time-dependent systems of PDEs. Parallelization details are hidden from the users point of view as far as possible. The parallelization is based on a general non-overlapping domain decomposition, which makes it possible to derive a large class of parallel solution methodss, e.g., global matrix solver or Schur complement approaches with geometrical preconditioning. The adaptive meshes are automatically redistributed to achieve good load balancing during the whole simulation.  Using several numerical examples from physics and materials science, we demonstrate that our approach scales to thousands of processors on today's HPC systems.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{VeyVoigt07} 
+{S.~Vey and A.~Voigt}. {AMDIS - adaptive multidimensional simulation}. Comput. Vis. Sci. 10 (2007), pp.~57--66.
+
+\bibitem{VoigtWitkowski10}
+{A.~Voigt, T.~Witkowski}. {Hybrid parallelization of adaptive finite element code}. Kybernetika 46-2 (2010), pp.~316--327.
+\end{thebibliography}

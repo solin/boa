@@ -1,0 +1,56 @@
+\title{The Sizing and Shape Optimization of Hospital Bed Structure for Independently Seperating Left and or Right Leg to Search Minimum Mass}
+\author{} \institute{}
+\tocauthor{A.~Ariyarit, \underline{R.~Kittipichai}}
+\maketitle
+
+\begin{center}
+{\large Atthaphon Ariyarit, \underline{Rung Kittipichai}}\\
+Department of Mechanical Engineering, Faculty of Engineering, Mahidol University\\
+{\tt u5013419@student.mahidol.ac.th, egrkt@mahidol.ac.th}\\
+\end{center}
+
+\section*{Abstract}
+At present, there are many types of the hospital bed with various functions such as lifting the head section or leg section of the bed. Unfortunately, the hospital bed cannot lift either left or right leg. That means when the patient's left leg or right leg is broken, the hospital bed need to lift both legs. It cannot lift independently.  This work focuses on the hospital bed design for independently separating the left and or right leg  for patient's leg splint. The paper proposes an idea to search the minimum mass of hospital bed. The design problem is a combination of sizing and shape optimization of bed structure. The aim is to minimize the mass of bed structure subject to nodal displacement, stress and buckling constraints using Genetic Algorithms (GAs) as a stochastic search method.\\
+The bed structure was modeled and analyzed by using Finite Element (FE) method. FE with 2-D beam element was selected and applied to the 3-D bed structure. The GAs and FE code using MATLAB program were developed to analyze the structure. The bed structure was modeled by using 54 beam elements with 38 nodes. The mass of bed structure was minimized by reducing the cross-section area of each element and changing some node position under the down force of 4,600 N and the left and right side force of 2,750 N. The structure was made of steel alloy with the safety factor of 2. The total design variables of the optimization problem were 56 variables in the sizing part and 4 variables in the shape part.  In GA procedure, the number of strings in a population and the number of generation was set to 500 and 1500, respectively. The results showed the success in searching the minimum mass whilst the stress, nodal displacement and buckling constraints were accepted. The optimum mass for the bed structure was 39.22 kg with the maximum constraint of stress in the element. Therefore, this paper demonstrates that it is possible to design the hospital bed for independently separating left and or right leg by using GAs combined with FE analysis to search the minimum mass. 
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{W.M.Jenkins97}
+{\sc W.~M.~ Jenkins}. {On the application of natural algorithms to structural design optimization}. Engineering Sturcture J.  Vol. 19 (1997), pp.~302--308.
+
+\bibitem{AnnicchiaricoCerrolaza98}
+{\sc W. ~Annicchiarico and M. ~Cerrolaza}. {Optimization of finite element bidimensional models: an approach based on genetic algorithms}.Finite Elements in Analysis and Design  Vol. 29 (1998), pp.~231--257.
+
+\bibitem{CoelloChristiansen00}
+{\sc C. ~A. ~Coello and A. ~D. ~Christiansen}. {Multiobjective optimization of trusses using genetic algorithms}.Computers \& Structures. Vol. 75 (2000), pp.~647--660.
+
+\bibitem{DebGulati01}
+{\sc K. ~Deb and S. ~Gulati}. {Design of truss-structures for minimum weight using genetic algorithms}. Finite Elements in Analysis and Design. Vol. 37 (2001), pp.~447--465.
+
+\bibitem{Dow98}
+{\sc J. ~O. ~Dow}. {A unified approach to the finite element method and error analysis procedure}. London: Academic Press (1998).
+
+\bibitem{Cook89}
+{\sc R. ~D. ~Cook, et al., }. {Concepts and applications of finite element analysis}.,New York: John Wiley \& Son (1989).
+
+\bibitem{Rao05}
+{\sc S. ~S. ~Rao}. {The finite element method in engineering, 4th ed}. Amsterdam: Boston, MA: Elsevier/Butterworth Heinemann (2005).
+
+\bibitem{Shigley86}
+{\sc J. ~E. ~Shigley}. {Mechanical engineering design.} London: McGraw-Hill (1986).
+
+\bibitem{Mott92}
+{\sc R. ~L. ~Mott}. {Machine elements in mechanical design}. New York: Maxwell Macmillan International (1992).
+
+\bibitem{Holland75}
+{\sc J. ~H. ~Holland}. {Adaptation in natural and artificial systems : an introductory analysis with applications to biology, control, and artificial intelligence}. Ann Arbor: University of Michigan Press (1975).
+
+\bibitem{Goldberg89}
+{\sc D. ~E. ~Goldberg}. {Genetic algorithms in search, optimization, and machine learning}. Reading: Addison-Wesley (1989).
+
+\bibitem{Coello00}
+{\sc C. ~A. ~C. ~Coello}. {Constraint-Handling using an Evolutionary Multiobjective Optimization Technique}. ," Civil Engineering and Environmental Systems. Vol. 17 (2000), pp.~319--346.
+
+\bibitem{Bureera01}
+{\sc S. ~Bureerat}. {Multidisciplinary Optimisation of Mechanical and Aerospace Systems}. the Degree of Doctor of Philosophy, Faculty of Science and Engineering, University of Manchester (2001).
+\end{thebibliography}

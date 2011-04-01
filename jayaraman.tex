@@ -1,0 +1,41 @@
+\title{Minimum Sobolev Norm Methods For Bi-Harmonic Type Equations}
+\author{} \institute{}
+\tocauthor{S.~Chandrasekaran, \underline{K.~R.~Jayaraman}, J.~Moffitt, M.~Gu, H.~N.~Mhaskar}
+\maketitle
+
+\begin{center}
+{\large S.~Chandrasekaran, \underline{K.~R.~Jayaraman}, J.~Moffitt}\\
+Department of Electrical and Computer Engineering, University of California\\
+{\tt shiv@ece.ucsb.edu, jrk@ece.ucsb.edu, jmoffitt@umail.ucsb.edu}\\
+\vspace{4mm}
+
+{\large M.~Gu}\\
+Department of Mathematics, University of California\\
+{\tt mgu@math.berkeley.edu}\\
+\vspace{4mm}
+
+{\large H.~N.~Mhaskar}\\
+Department of Mathematics, California State University\\
+{\tt hmhaska@calstatela.edu}
+\end{center}
+
+\section*{Abstract}
+Minimum Sobolev Norm (MSN) methods were introduced by the authors as a technique to produce higher-order interpolatory operators that suppress Runge oscillations \cite{MSN1,MSN2}. This interpolatory framework can be used to construct finite difference weights (MSN-FD weights) for solving PDEs as will be discussed in \cite{MSNFD}. One can also construct finite element (MSN-FEM) like approaches based on the MSN framework. In this article we give a brief summary of these methods and present a large set of numerical experiments to show the high efficiency, accuracy, robustness and generality of the methods. Details of meshing and mapping to assemble the grand system are discussed. We then consider the solution to equations with bi-harmonic leading terms using the MSN-FD method. Initial results obtained with the MSN-FD method for the pure bi-harmonic equation indicates it to be a very promising higher-order method. For several difficult cases accuracies of $O(10^{-8})$ were achieved with relatively coarse grids. Results of solving several classes of planar PDEs are also compared among the MSN based approaches and Finite Element Toolboxes, such as the Matlab's PDETool, Hermes \cite{Hermes} and Deal II \cite{Deal2}. Implementation issues, such as possible opportunities for parallelism, as well as implementation notes about the use of Python for the development of the above packages are discussed.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{MSN1}
+{\sc S.~Chandrasekaran and H.~N.~Mhaskar}. {A construction of linear bounded interpolatory operators on the torus}, arXiv:1011.5448v1 [math.NA].
+
+\bibitem{MSN2}
+{\sc S.~Chandrasekaran, K.~R.~Jayaraman, J.~Moffitt, H.~N.~Mhaskar, and S.~Pauli}. {Minimum Sobolev Norm schemes and applications in image processing}, Proc. SPIE 7535, 753507 (2010), DOI:10.1117/12.842734.
+
+\bibitem{MSNFD}
+{\sc S.~Chandrasekaran, M.~Gu, K.~R.~Jayaraman, J.~Moffitt, H.~N.~Mhaskar}. {Higher Order Numerical Discretization Methods with Sobolev Norm Minimization}. To be submitted to The International Conference on Computational Sciences 2011.
+
+\bibitem{Hermes}
+{\sc T.~Vejchodsky, P.~Solin, M.~Zitka}. {Modular hp-FEM System HERMES and Its Application to the Maxwell's Equations}. Math. Comput. Simul. 76 (2007) 223 - 228.
+
+\bibitem{Deal2}
+{\sc W.~Bangerth, R.~Hartmann and G.~Kanschat}. {deal.II - A general-purpose object-oriented finite element library}, ACM Transactions on Mathematical Software (TOMS), Vo.33.4 (2007)
+\end{thebibliography}

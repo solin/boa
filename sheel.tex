@@ -1,0 +1,46 @@
+\title{MAdLib: An Efficient Mesh Adaptation Algorithm}
+\author{} \institute{}
+\tocauthor{\underline{T.~K.~Sheel}, J.~F.~Remacle}
+\maketitle
+
+\begin{center}
+{\large \underline{T. K. Sheel}}\\
+StFX Centre for Logic $\&$ Information, St. Francis Xavier University\\
+{\underline{\tt tsheel@stfx.ca}}\\
+\vspace{4mm}
+
+{\large J.~F. Remacle}\\
+iMMC, Universite Catholique de Louvain, Louvain-La-Neuve\\
+{\tt jean-francois.remacle@uclouvain.be}
+\end{center}
+
+\section*{Abstract}
+Most of today's finite element solvers are able to run on parallel computers. Adaptive strategies should also be parallelized. Extending the implementation of error estimation procedures is usually straightforward. This is not the case for mesh adaptation. Extending mesh adaptation algorithms to parallel is a recent trend in the field of mesh generation. 
+
+The other reason for parallelizing mesh refinement procedures is to enable the generation of huge meshes that include several millions of nodes. For example, Gmsh 2.4, an open source mesh generation software \cite{geuzaine2009}, needs about $t_{cpu}=64$sec. of cpu. and requires about 240 Mb of RAM for generating a mesh that includes $n_e=1.25~10^6$  tetrahedra and $n_p=0.206~10^6$ points.
+
+Finite element formulations in the time domain allow the mesh to vary in time. For vertex motions, formulations are usually written in the arbitrary Lagrangian-Eulerian framework. When topological modifications are performed, mesh to mesh interpolations are usually used~\cite{remacle2005}. Disappointingly, most of the state-of-the-art finite element implementations only allow a limited set of operations. For example, implementations only allow local mesh refinement (no coarsening). However, several authors have proposed more  general methods for local mesh adaptation. These methods either use local re-meshing, or rely on a larger set of mesh modifications, leading to a well-proved~\cite{remacle2006,compere2008} class of mesh adaptation methods for fixed domain boundaries. But no open source implementation of such a method is available.
+
+We will present an efficient mesh adaptation library (http://sites.uclouvain.be/madlib/) which is an open source implementation under GNU license. 
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{geuzaine2009}
+{\sc C.~Geuzaine, J.-F.~Remacle}. 
+\newblock Gmsh: a three dimensional finite element mesh generator with built-in pre- and post-processing facilities, 2009.
+\newblock http://geuz.org/gmsh
+
+\bibitem{remacle2005}
+{\sc J.-F.~Remacle, X.~Li, M.~S.~Shephard, J.~E.~Flaherty}. 
+\newblock Anisotropic adaptive simulation of transient flows using Discontinuous Galerkin Methods.\newblock International Journal for Numerical Methods in Engineering, 62(7)(2005), pp.~899-923.
+
+\bibitem{remacle2006}
+{\sc J.-F.~Remacle, S.~Soares Frazao, X.~Li, M.~S.~Shephard}. 
+\newblock An adaptive discretization of shallow-water equations based on discontinuous galerkin Methods. 
+\newblock International Journal for Numerical Methods in Fluids, 52(2006), pp.~903-923.
+
+\bibitem{compere2008}
+{\sc G.~Compere, E.~Marchandise, J.-F.~Remacle}. 
+\newblock Transient adaptivity applied to two-phase incompressible flows. 
+\newblock Journal of Computational Physics, 227(2008), pp.~1923-1942.
+\end{thebibliography}

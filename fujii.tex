@@ -1,0 +1,46 @@
+\title{Finite Element Analysis of Laser Modes within Photonic Random Media}
+\author{} \institute{}
+\tocauthor{\underline{G.~Fujii}, T.~Ueta}
+\maketitle
+
+\begin{center}
+{\large \underline{Garuda Fujii},  Toshiro Matsumoto, Toru Takahashi}\\
+Department of Mechanical Science and Engineering, Nagoya University\\
+{\tt g\_fujii@nuem.nagoya-u.ac.jp}\\
+\vspace{4mm}
+
+{\large Tsuyoshi Ueta}\\
+Institute of Media and Information Technology, Chiba University\\
+{\tt ueta@faculty.chiba-u.jp}
+\end{center}
+
+\section*{Abstract}
+Since the first experimental observation of laser action in photonic random media \cite{Lawandy}, such amplifications of light called `random laser' \cite{Wiersma} have been investigated vigorously using numerical methods \cite{Vanneste,Sebbah} as well as experimental ones \cite{Cao}.
+
+The finite-difference time-domain (FDTD) method has been widely used for solving Maxwell's equations to simulate laser oscillations by which the electromagnetic field intensity is extremely enhanced in random media. It is, however, difficult to accomplish accurate computations by means of FDTD because of the staircase-like errors which occur on each interface of dielectric material \cite{Akyurtlu}.
+
+On the other hand, such errors are never observed in FEM analyses because of the accurate interpolation of the shapes of the random media, hence FEM is more  advantageous for accurate calculations. In this study, the random laser action is investigated by node-base FEM calculations of the Poynting vectors emitted from the system in the case of TM mode. We use perfectly matched layer (PML) absorbing boundary condition to simulate open region scattering problem. The population inversion density within a two-dimensional random medium composed of optically active materials is modeled by the negative imaginary part of their dielectric constant \cite{Sakoda}.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{Lawandy}
+{\sc N.~M.~Lawandy, R.~M.~Balachandran, A.~S.~L.~Gomes and E.~Sauvain}. {Laser action in strongly scattering media}. Nature 368 (1994), pp.~436--438.
+
+\bibitem{Wiersma}
+{\sc D.~S.~Wiersma, M.~P.~van ~Albada, and Ad.~Lagendijk}. {Random laser?}. Nature 373 (1995), pp.~203--204.
+
+\bibitem{Vanneste}
+{\sc  C.~Vanneste and P.~Sebbah}. {Selective Excitation of Localized Modes in Active  Random Media}. Phys. Rev. Lett. 87 (2001), pp.~183903-1--183903-4.
+
+\bibitem{Sebbah}
+{\sc P.~Sebbah and C.~Vanneste}. {Random laser in the localized regime}. Phys. Rev. B 66 (2002), pp.~144202-1--144202-9.
+
+\bibitem{Cao}
+{\sc  H.~Cao, J.~Y.~Xu, S.~H.~Chang and S.~T.~Ho}. {Transition from amplified spontaneous emission to laser action in strongly scattering media}. Phys. Rev. E 61 (2000), pp.~1985--1989.
+
+\bibitem{Akyurtlu}
+{\sc A.~Akyurtlu, D.~H.~Werner, V.~Veremey, D.~J.~Steich and K.~Aydin}. {Staircasing Errors in FDTD at an Air-Dielectric Interface}. J. Lightwave Tech. 17 (1999), pp.~2161--2169.
+
+\bibitem{Sakoda}
+{\sc K.~Sakoda, K.~Ohtaka and T.~Ueta}. {Low-threshold laser oscillation due to group-velocity anomaly peculiar to two- and three-dimensional photonic crystals}. Opt. Express 4 (1999), pp.481-489.
+\end{thebibliography}

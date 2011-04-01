@@ -1,0 +1,36 @@
+\title{An Efficient Preconditioner for Elliptic Problems Discretized by High-Order Finite Element Problems}
+\author{} \institute{}
+\tocauthor{\underline{T.~Austin}, B.~Jamroz, C.~Jhurani, M.~Brezina, T.~Manteuffel, J.~Ruge}
+\maketitle
+
+\begin{center}
+{\large \underline{Travis Austin}, Ben Jamroz, Chetan Jhurani}\\
+Tech-X Corporation\\
+{\tt austin@txcorp.com}\\
+\vspace{4mm}
+
+{\large Marian Brezina, Thomas Manteuffel, John Ruge}\\
+Department of Applied Mathematics, University of Colorado
+\end{center}
+
+\section*{Abstract}
+The popularity of the high-order finite element method has grown with the increased awareness that greater accuracy can be achieved for a given amount of computational work compared against the linear finite element method.  However, for a given mesh size, the higher-order finite element method yields less sparse matrices that can have an impact on iterative solver performance.   Direct usage of preconditioned Krylov methods designed for linear finite element problems may not achieve the best possible linear solver performance over one carefully tailored to the problem at hand.
+
+For example, the wider stencil patterns found in high-order finite element matrices increases the memory consumed by the algebraic multigrid method (AMG) at all levels.  To reduce the memory and yield a more efficient preconditioner, researchers have proposed a preconditioner built from a low-order version of the high-order finite element matrix \cite{Ors1980,Heys2005}. In \cite{Heys2005}, it was established that for polynomial order $p > 4$, this sparser preconditioner is more efficient for 2D Poisson's equation than preconditioning the original high-order finite element system with algebraic multigrid built from the higher-order system.  
+
+The approach of \cite{Ors1980,Heys2005} requires rediscretizing the problem on a finer finite element mesh constructed from the nodes of the high-order finite elements.  We have designed a method that automatically constructs a lower-order matrix by constructing sparse versions of dense, high-order element stiffness matrices and then employing these sparser element stiffness matrices in a global assembly routine \cite{Aus2011}.  The sparseness pattern can be constructed automatically and the sparse matrix entries can be calculated using a small least-squares problem.  We present recent results using this method for elliptic problems, and compare to the canonical two-level additive Schwarz method \cite{Fis1997}.  We consider uniform and non-uniform meshes and techniques for reducing the cost of the sparse preconditioner setup.  Results are presented for the single processor case as well as for hundreds of processors.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{Ors1980}
+\textsc{S.~Orszag}. {Spectral methods for problems in complex geometries}. J. Comp. Phys. 37 (1980), pp.~70--92.
+
+\bibitem{Heys2005}
+\textsc{J.~Heys, T.~Manteuffel, S.~McCormick, L.~Olson}. {Algebraic multigrid for higher-order finite elements}. J. Comp. Phys. 204 (2005),  pp.~520--532.
+
+\bibitem{Aus2011}
+\textsc{T.~Austin, M.~Brezina, T.~Manteuffel, J.~Ruge}. {Automatic construction of sparse preconditioners for high-order finite element problems.} Accepted for publication in Bentham eBook: {\em Efficient Preconditioned Solution Methods for Elliptic Partial Differential Equations}. 
+
+\bibitem{Fis1997}
+\textsc{P.~Fischer}. {An overlapping Schwarz method for spectral element solution of the incompressible Navier-Stokes equations.} J. Comp. Phys. 133  (1997), pp.~84--101.
+\end{thebibliography}

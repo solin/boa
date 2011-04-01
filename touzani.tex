@@ -1,0 +1,42 @@
+\title{OFELI: An Object-Oriented Finite Element Library}
+\author{} \institute{}
+\tocauthor{Rachid Touzani}
+\maketitle
+
+\begin{center}
+{\large Rachid Touzani}\\
+Laboratoire de Math\'ematiques, UMR CNRS\\
+Universit\'e Blaise Pascal (Clermont-Ferrand 2)\\
+{\tt rachid.touzani@univ-bpclermont.fr}
+\end{center}
+
+\section*{Abstract}
+We present, in this contribution the library OFELI  (Object Finite Element Library). OFELI is a multipurpose finite element library written in C++. OFELI is designed as an efficient tool for constructing large size finite element codes for coupled problems in 2-D and 3-D. Classes for mesh handling, linear system solving, optimization, eigenvalue extraction, \ldots are provided to solve various types of problems and to deal with a large variety of numerical methods. We present some examples of developed codes in CFD, electromagnetics and solid mechanics and emphasize on some particular applications such as:
+\begin{itemize}
+\item A projection finite element code for time dependent incompressible Navier-Stokes equations (\cite{PhC}).
+\item A finite element code for three-dimensional elasticity.
+\item A mixed hybrid finite element method for the Laplace equation (see \cite{Djenno}).
+\item A MUSCL finite volume solver for compressible Euler equations (see \cite{CC,CR}).
+\item A numerical code for the simulation of inductively coupled plasma torches.
+\end{itemize}
+Other applications in chemistry like \cite{SSDTZ} can be mentioned in this context.
+
+The library is provided with some prototype codes to illustrate its use. OFELI is free but copyrighted under the LGPL license.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{PhC}
+{\sc P.~Caussignac}. {A gauge finite element method for the 2D Navier--Stokes problem}. Applied Numerical Mathematics, 58(10), doi: 1016/j.apnum.2007.08.002 (2007).
+
+\bibitem{CC}
+{\sc S. Clain and V. Clauzon}. {The multi-slopes MUSCL method}. Proceeding in the Finite Volumes for Complex Application 5, Wiley Editor (2008), pp.~297--304.
+
+\bibitem{CR}
+{\sc S.~Clain and D.~Rochette}. {First- and second-order finite volume methods for the one-dimensional nonconservative Euler system}. J. Comp. Phys., 28(22), doi: 10.1016/j.jcp.2009.07.038 (2009).
+
+\bibitem{Djenno}
+{\sc M. Djenno}. {Nouvelles approximations num\'eriques pour les \'equations de Stokes et l'\'equation Level Set}. PhD Thesis, Universit\'e Blaise Pascal, France (2007).
+
+\bibitem{SSDTZ}
+{\sc \L.~Sochaczewski, A.~Stockdale, W.~Davison, W.~Tych, and H.~Zhang}. {A three-dimensional reactive transport model for sediments, incorporating microniches}. Environmental Chemistry, 5(3), doi: 10.1071/EN08006 (2008),  pp.~218--225.
+\end{thebibliography}
