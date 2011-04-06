@@ -1,0 +1,34 @@
+\title{A New Online Interactive Web Notebook Based on ExtJS}
+\author{} \institute{}
+\tocauthor{M.~Paprocki}
+\maketitle
+
+\begin{center}
+{\large Mateusz Paprocki}\\
+University of Nevada, Reno\\
+{\tt mattpap@gmail.com}
+\end{center}
+
+\section*{Abstract}
+With the increasing importance of the Internet for science and teaching, especially for presenting dynamic and interactive materials, the development of a feature--complete and effective--to--use online interactive notebook requires more attention. An online interactive notebook is a computer program that runs in a web browser and provides an interface for constructing interactive worksheets consisting of source code in various programming languages (most nottably Python), images, animations, formatted text, 2D and 3D visualisations, and interactive applets. An online interactive notebook is expected to run in any modern desktop web browser including Google Chrome, Mozilla Firefox, Microsoft Internet Explorer, Apple Safari and other, as well as on mobile devices, under Apple iOS or Google Android. 
+The key desgin issue is to undergo a paradigm shift from interactive web sites to web applications, in which user will be able manage resources of different kind uniformly in a single web browser window or tab. To make this happen, a desktop--like JavaScript environment has been developed using well establised ExtJS library \cite{ExtJS}. This allows to obtain desktop application experience without installing any software on a local computer. Computations in this system are performed on the server side, where cloud computing machinery is utilized to manage physical computational resources.
+
+This is not the first approach to develop an online interactive notebooks. There have been two of them in the Open Source market: the Sage Notebook \cite{SageNotebook} and the Codenode Notebook \cite{CodenodeNotebook}. The former is more mature and it provides richer user--level functionality, including plotting and interactive components. Codenode is younger and puts more emphasis on designing the internal structures properly. Therefore, it is more modular and easier to extend than the Sage Notebook. On the other hand, it is missing many useful features of the Sage Notebook. Both notebooks are oriented towards the Python programming language and allow running most Python software, including mathematical libraries like Sage \cite{Sage} and SymPy \cite{SymPy}. Our system allows for interoperability with those systems.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+\bibitem{SageNotebook}
+{\sc www.sagenb.org}. {http://www.sagenb.org/} (accessed April 28, 2010)
+
+\bibitem{CodenodeNotebook}
+{\sc codenode.org}. {http://codenode.org/} (accessed April 28, 2010)
+
+\bibitem{Sage}
+{\sc www.sagemath.org}. {http://www.sagemath.org/} (accessed April 28, 2010)
+
+\bibitem{SymPy}
+{\sc www.sympy.org}. {http://www.sympy.org} (accessed April 28, 2010)
+
+\bibitem{ExtJS}
+{\sc extjs.com}. {http://extjs.com} (accessed April 28, 2010)
+\end{thebibliography}

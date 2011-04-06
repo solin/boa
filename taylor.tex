@@ -10,7 +10,7 @@ ANATECH Corp., San Diego, CA\\
 \end{center}
 
 \section*{Abstract}
-The use of computational methods in nuclear, civil and other engineering fields has become routine as the theory and algorithms have matured over the past fifty years. Nonlinear analysis including both geometric large deformations and nonlinear materials is now common. The size and complexity of the models and the necessity to perform multi-physics simulations is the big challenge for the computational mechanics community. Increasingly, the demand from the analyst community is for easy-to-use, cost-effective, time efficient analysis tools for these more complex problems. Three-dimensional analyses using the TeraGrande finite element code \cite{TG} will be presented to illustrate the concepts discussed in this presentation. The examples will include of aircraft impact on large pre-stressed concrete structures\cite{ras}, geomechanics solutions of deformations in highly faulted and stratified oil reservoirs, and blast loading on buried underground structures.
+The use of computational methods in nuclear, civil and other engineering fields has become routine as the theory and algorithms have matured over the past fifty years. Nonlinear analysis including both geometric large deformations and nonlinear materials is now common. The size and complexity of the models and the necessity to perform multi-physics simulations is the big challenge for the computational mechanics community. Increasingly, the demand from the analyst community is for easy-to-use, cost-effective, time efficient analysis tools for these more complex problems. Three-dimensional analyses using the TeraGrande finite element code \cite{taylor1} will be presented to illustrate the concepts discussed in this presentation. The examples will include of aircraft impact on large pre-stressed concrete structures\cite{taylor2}, geomechanics solutions of deformations in highly faulted and stratified oil reservoirs, and blast loading on buried underground structures.
 
 With the advent of geometry-based automatic mesh generation, engineers can now create extremely detailed finite element models that contain many parts with complex geometry. Models with millions of finite elements and hundreds of parts are now routinely generated. The ease of model generation is rapidly outpacing the ability of the computational engines to perform the analyses in a timely manner. The computational effort required for the analysis of the models is generally dominated by the CPU time spent in the equation solver and in the contact search and tracking algorithms required to determine the physical contact interactions between the parts. To reduce the turn-around time for large complex models, parallel algorithms using multiple processors are becoming common. Algorithms and the software architectures will be presented that address the issues required for successfully spanning the range from a handful of processors up to the massively parallel case of thousands of
 processors in the context of both shared memory and distributed memory hardware.
@@ -21,12 +21,13 @@ Geometry-based model generation using automatic mesh generation is dominated by 
 
 \bibliographystyle{plain}
 \begin{thebibliography}{1}
-\bibitem{TG} 
+\bibitem{taylor1} 
 \textsc{ANATECH Corp.}.
 \newblock{TeraGrande User's Manual -- Version 1.0}.
 \newblock{San Diego, CA, 2005.}
 
-\bibitem{ras}{Rashid, Y. R., James, R. J., et.al.,}
+\bibitem{taylor2}
+\textsc{Y. R. Rashid, R. J. James, et.al.}
 \newblock{{Failure Analysis and Risk Evaluation of Lifeline Structures Subjected to Blast Loadings and Aircraft/Missile Impact,}}
 \newblock{Proceedings of the International Workshop on Structures Response to Impact and Blast, Technion, Israel Institute of Technology, Haifa, Israel, November 15--17, 2009.}
 \end{thebibliography}
