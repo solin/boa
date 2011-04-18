@@ -16,22 +16,22 @@ Oak Ridge National Laboratory
 \section*{Abstract}
 A current challenge before the computational science and numerical mathematics community is the efficient computational solution of multiphysics systems.  These systems are strongly coupled, highly nonlinear and characterized by multiple physical phenomena that span a very large range of length and time scales.   These characteristics make the scalable, robust, accurate, and efficient computational solution of these systems over, relevant dynamical time scales of interest extremely challenging.
 
-In this presentation I will discuss issues related to the stable, accurate and efficient time integration, nonlinear, and linear solution of multiphysics systems. The discussion will begin with a few illustrative examples that compare operator split and semi-implicit approaches, to fully-coupled fully-implicit methods. I will then overview a number of the important fully-coupled solution methods that our research group has applied to the solution of coupled multiple-time-scale multi-physics systems. The solution methods that we employ include, fully-implicit time integration, direct-to-steady-state solution methods, continuation, bifurcation, and optimization techniques that are based on Newton-Krylov iterative solvers \cite{heroux1,heroux2}. To enable the robust, scalable and efficient solution of large-scale sparse  linear systems algebraic multilevel (AMG) preconditioners are employed. These include a fully-coupled graph-based aggregation AMG technique \cite{heroux3} and approximate block factorization techniques \cite{heroux4}. To demonstrate the capability of these methods I will present representative results for solution of transport / reaction and resistive 
+In this presentation I will discuss issues related to the stable, accurate and efficient time integration, nonlinear, and linear solution of multiphysics systems. The discussion will begin with a few illustrative examples that compare operator split and semi-implicit approaches, to fully-coupled fully-implicit methods. I will then overview a number of the important fully-coupled solution methods that our research group has applied to the solution of coupled multiple-time-scale multi-physics systems. The solution methods that we employ include, fully-implicit time integration, direct-to-steady-state solution methods, continuation, bifurcation, and optimization techniques that are based on Newton-Krylov iterative solvers \cite{shadid1,shadid2}. To enable the robust, scalable and efficient solution of large-scale sparse  linear systems algebraic multilevel (AMG) preconditioners are employed. These include a fully-coupled graph-based aggregation AMG technique \cite{shadid3} and approximate block factorization techniques \cite{shadid4}. To demonstrate the capability of these methods I will present representative results for solution of transport / reaction and resistive 
 magneto-hydrodynamic systems with stabilized finite element methods. In this context I will discuss robustness, efficiency, and the parallel and algorithmic scaling of the solution methods.
 
 This work was partially supported by  the DOE office of Science AMR program at Sandia National Laboratory. Sandia is a multiprogram laboratory operated by Sandia Corporation, a Lockheed Martin Company, for the United States Department of Energy's National Nuclear Security Administration under contract DEM-AC04-94AL85000
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
-\bibitem{heroux1}
+\bibitem{shadid1}
 \textsc{M. Sala and R.S. Tuminaro}. {Jacobian-free {N}ewton--{K}rylov methods: a survey of approaches and applications}. J. Comput. Phys 31 (2004), pp.~357--397.
 
-\bibitem{heroux2}
+\bibitem{shadid2}
 \textsc{J. N. Shadid, A. G. Salinger, R. P. Pawlowski, P. T. Lin, G. L. Hennigan, R. S. Tuminaro and R. B. Lehoucq}. {Large-scale Stabilized FE Computational Analysis of Nonlinear Steady State Transport/Reaction Systems}. CMAME 195 (2006), pp.~1846--1871.
 
-\bibitem{heroux3}
+\bibitem{shadid3}
 \textsc{M. Sala and R.S. Tuminaro}. {A new Petrov-Galerkin smoothed aggregation preconditioner for nonsymmetric linear systems}. SIAM J. Sci. Stat. 31 (2008), pp.~143--166.
 
-\bibitem{heroux4}
+\bibitem{shadid4}
 \textsc{H. Elman, V. Howle, J. N.  Shadid, R. Shuttleworth, and R. Tuminaro}. {A Taxonomy of Parallel Mulit-level Block Preconditioners for the Incompressible Navier-Stokes Equations}. J. Comp. Phys. 227 (2008), pp. 1790 -- 1808.
 \end{thebibliography}
