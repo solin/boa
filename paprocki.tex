@@ -1,34 +1,35 @@
-\title{A New Online Interactive Web Notebook Based on ExtJS}
+\title{FEMhub Online Numerical Methods Laboratory}
 \author{} \institute{}
 \tocauthor{M.~Paprocki}
 \maketitle
 
 \begin{center}
-{\large Mateusz Paprocki}\\
+{\large Mateusz Paprocki, Pavel Solin}\\
 University of Nevada, Reno\\
-{\tt mattpap@gmail.com}
+{\tt mattpap@gmail.com, solin@unr.edu}
 \end{center}
 
 \section*{Abstract}
-With the increasing importance of the Internet for science and teaching, especially for presenting dynamic and interactive materials, the development of a feature--complete and effective--to--use online interactive notebook requires more attention. An online interactive notebook is a computer program that runs in a web browser and provides an interface for constructing interactive worksheets consisting of source code in various programming languages (most nottably Python), images, animations, formatted text, 2D and 3D visualisations, and interactive applets. An online interactive notebook is expected to run in any modern desktop web browser including Google Chrome, Mozilla Firefox, Microsoft Internet Explorer, Apple Safari and other, as well as on mobile devices, under Apple iOS or Google Android. 
-The key desgin issue is to undergo a paradigm shift from interactive web sites to web applications, in which user will be able manage resources of different kind uniformly in a single web browser window or tab. To make this happen, a desktop--like JavaScript environment has been developed using well establised ExtJS library \cite{ExtJS}. This allows to obtain desktop application experience without installing any software on a local computer. Computations in this system are performed on the server side, where cloud computing machinery is utilized to manage physical computational resources.
+With increasing importance of the Internet for research and teaching, especially for presenting dynamic and interactive materials, the development of feature--complete and effective--to--use online tools becomes a high priority. Such applications run in a web browser and provide an interface for constructing interactive worksheets consisting of source code in various programming languages (most notably Python), images, animations, formatted text, 2D and 3D visualisations, and interactive applets. Compatibility with modern desktop web browsers including Google Chrome, Mozilla Firefox, Microsoft Internet Explorer, Apple Safari and others are required, and capability to run on mobile platforms such as Apple iOS or Google Android is desirable. 
 
-This is not the first approach to develop an online interactive notebooks. There have been two of them in the Open Source market: the Sage Notebook \cite{SageNotebook} and the Codenode Notebook \cite{CodenodeNotebook}. The former is more mature and it provides richer user--level functionality, including plotting and interactive components. Codenode is younger and puts more emphasis on designing the internal structures properly. Therefore, it is more modular and easier to extend than the Sage Notebook. On the other hand, it is missing many useful features of the Sage Notebook. Both notebooks are oriented towards the Python programming language and allow running most Python software, including mathematical libraries like Sage \cite{Sage} and SymPy \cite{SymPy}. Our system allows for interoperability with those systems.
+The key design issue is to undergo a paradigm shift from interactive web sites to web applications where the user is able manage resources of different types uniformly in a single web browser window or tab. To make this happen, a desktop--like JavaScript environment called {\em FEMhub Online Numerical Methods Laboratory} \cite{ol} has been developed using the well establised ExtJS library \cite{ExtJS}. The Online Lab is a desktop-like application where the user does not have to install anything on his/her local computer. User data are stored and computations are run on a remote server where cloud computing machinery is utilized to manage physical computational resources.
+
+This is not the first attempt to develop such an application. There have been at least two of them in the Open Source market: the Sage Notebook \cite{SageNotebook} and the Codenode Notebook \cite{CodenodeNotebook}. The former is more mature and it provides richer user--level functionality, including plotting and interactive components. Codenode is younger and puts more emphasis on designing the internal structures properly. Therefore, it is more modular and easier to extend than the Sage Notebook. On the other hand, it is missing many useful features of the Sage Notebook. As the Online Lab, both these notebooks are oriented towards the Python programming language and allow running most Python software, including mathematical libraries such as SciPy, NumPy, SymPy and many others. The Online Lab has a more attractive User Interface based on the ExtJS library, and it is more oriented towards advanced computational methods for PDEs and associated subjects such as browser-based geometry modeling and mesh generation, and WebGL 3D visualization and postprocessing. The Online Lab is interopeable with both Sage and Codenode. 
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
 \bibitem{SageNotebook}
-{\sc www.sagenb.org}. {http://www.sagenb.org/} (accessed April 28, 2010)
+{\sc www.sagenb.org}. {http://www.sagenb.org/} (accessed December 10, 2010)
 
 \bibitem{CodenodeNotebook}
-{\sc codenode.org}. {http://codenode.org/} (accessed April 28, 2010)
+{\sc codenode.org}. {http://codenode.org/} (accessed December 10, 2010)
 
-\bibitem{Sage}
-{\sc www.sagemath.org}. {http://www.sagemath.org/} (accessed April 28, 2010)
+\bibitem{ol}
+{\sc lab.femhub.org}. {http://lab.femhub.org/} (accessed December 10, 2010)
 
 \bibitem{SymPy}
-{\sc www.sympy.org}. {http://www.sympy.org} (accessed April 28, 2010)
+{\sc www.sympy.org}. {http://www.sympy.org} (accessed December 10, 2010)
 
 \bibitem{ExtJS}
-{\sc extjs.com}. {http://extjs.com} (accessed April 28, 2010)
+{\sc extjs.com}. {http://extjs.com} (accessed December 10, 2010)
 \end{thebibliography}

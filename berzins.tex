@@ -4,6 +4,7 @@
 \maketitle
 
 \begin{center}
+\vspace{-6mm}
 {\underline{Martin Berzins}, Justin Luitjens, Qingyu Meng}\\
 SCI Institute, University of Utah\\
 {\tt mb@cs.utah.edu, luitjens@cs.utah.edu,  qymeng@cs.utah.edu}\\
@@ -20,7 +21,7 @@ Department of Chemistry, University of Utah\\
 \end{center}
 
 \section*{Abstract}
-The Uintah Software has been developed over the last decade \cite{csafe2,csafe3} to solve fluid-structure interaction problems on structured adaptive grids on large-scale, long-running, data-intensive problems, \cite{fourthmit}. Uintah uses flow solvers linked to a particle method utlizing a finite element type formulation. The challenge of making Uintah scale to large numbers of cores on realistic engineering applications is addressed in this presentation. Uintah uses a particularly simple block-structured AMR method, \cite{IPDPS10}. The scalability of this method is contrasted with the Berger-Rigoutsos approach \cite{BergerRigoutsos}. Uintah uses a novel asynchronous task-based approach with fully automated load balancing. This involves out of order execution of tasks \cite{Meng}  and measurement-based load balancing. The application of Uintah to a petascale problem in hazard analysis arising from {\it sympathetic} explosions in which the collective interactions of a large ensemble of explosives results in dramatically increased explosion violence, is considered, \cite{Ber2010b}. The advances in scalability and combustion modeling needed to begin to solve this problem are discussed and illustrated by prototypical computational results. Finally the challenges of multicore architectures, are considered as is the potential for high-order methods (e.g. Discontinuous Galerkin) to compute solutions with the least energy use per significant digit of accuracy.
+The Uintah Software has been developed over the last decade \cite{csafe2} to solve fluid-structure interaction problems on structured adaptive grids on large-scale, long-running, data-intensive problems, \cite{fourthmit}. Uintah uses flow solvers linked to a particle method utlizing a finite element type formulation. The challenge of making Uintah scale to large numbers of cores on realistic engineering applications is addressed in this presentation. Uintah uses a particularly simple block-structured AMR method, \cite{IPDPS10}. The scalability of this method is contrasted with the Berger-Rigoutsos approach \cite{BergerRigoutsos}. Uintah uses a novel asynchronous task-based approach with fully automated load balancing. This involves out of order execution of tasks and measurement-based load balancing. The application of Uintah to a petascale problem in hazard analysis arising from {\it sympathetic} explosions in which the collective interactions of a large ensemble of explosives results in dramatically increased explosion violence, is considered, \cite{Ber2010b}. The advances in scalability and combustion modeling needed to begin to solve this problem are discussed and illustrated by prototypical computational results. Finally the challenges of multicore architectures, are considered as is the potential for high-order methods (e.g. Discontinuous Galerkin) to compute solutions with the least energy use per significant digit of accuracy.
 
 \bibliographystyle{plain}
 \begin{thebibliography}{10}
@@ -39,9 +40,9 @@ The Uintah Software has been developed over the last decade \cite{csafe2,csafe3}
 \bibitem{IPDPS10}
 \textsc{J.~Luitjens and M.~Berzins}. {Improving the performance of {U}intah: {A} large-scale adaptive meshing computational framework}. In {\em Proceedings of the 24th IEEE International Parallel and Distributed Processing Symposium (IPDPS10)}, 2010. 
 
-\bibitem{Meng}
-\textsc{Q. Meng, J. Luitjens, M. Berzins}. {Dynamic Task Scheduling for the Uintah Framework}. In {\em Proceedings of the 3rd IEEE Workshop on Many-Task Computing on Grids and Supercomputers (MTAGS10)}, 2010.
+%\bibitem{Meng}
+%\textsc{Q. Meng, J. Luitjens, M. Berzins}. {Dynamic Task Scheduling for the Uintah Framework}. In {\em Proceedings of the 3rd IEEE Workshop on Many-Task Computing on Grids and Supercomputers (MTAGS10)}, 2010.
 
-\bibitem{csafe3}
-\textsc{S.~G. Parker, J.~Guilkey, and T.~Harman}. {A component-based parallel infrastructure for the simulation of fluid-structure interaction}. {\em Engineering with Computers}, 22:277--292, 2006.
+%\bibitem{csafe3}
+%\textsc{S.~G. Parker, J.~Guilkey, and T.~Harman}. {A component-based parallel infrastructure for the simulation of fluid-structure interaction}. {\em Engineering with Computers}, 22:277--292, 2006.
 \end{thebibliography}
